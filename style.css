@@ -1,0 +1,931 @@
+@font-face
+{
+font-family: 'Open Sans';
+src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face
+{
+font-family: 'Open Sans';
+src: url(../fonts/OpenSans-Bold.ttf);
+font-weight: bold;
+}
+@font-face
+{
+font-family: 'Open Sans';
+src: url(../fonts/OpenSans-Light.ttf);
+font-weight: 300;
+}
+@font-face
+{
+font-family: 'Open Sans';
+src: url(../fonts/OpenSans-Semibold.ttf);
+font-weight: 500;
+}
+/* Global Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+ul li{list-style: none;}
+a, a:hover, a:visited, a:active{text-decoration: none;}
+h1, h2, h3, h4, h5, h6, p, a{font-family: open-sans, "Helvetica Neue",Helvetica,Arial,sans-serif;color: #4a4a4a;}
+a:hover{color: #09AEEF;}
+
+/* Account for fixed navbar */
+body {
+	min-width: 970px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	font-family: open-sans, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* Non-responsive overrides
+*
+* Utilitze the following CSS to disable the responsive-ness of the container,
+* grid system, and navbar.
+*/
+
+/* Reset the container */
+.container {
+	width: 980px;
+	max-width: none !important;
+}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+	float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+	display: block !important;
+	height: auto !important;
+	padding-bottom: 0;
+	overflow: visible !important;
+}
+
+.navbar-toggle {
+	display: none;
+}
+.navbar-collapse {
+	border-top: 0;
+}
+
+.navbar-brand {
+	margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+	float: left;
+	margin: 0;
+}
+.navbar-nav > li {
+	float: left;
+}
+.navbar-nav > li > a {
+	padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+	float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+	position: absolute;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-width: 0 1px 1px;
+	border-radius: 0 0 4px 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #333;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li.focus > a {
+	color: #09AEEF;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: #fff !important;
+	background-color: #09AEEF !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	color: #999 !important;
+	background-color: transparent !important;
+}
+
+/* custom navigation */
+#navbar {background-color: #fff;border: none;}
+#navbar .container {border-bottom: 1px solid #d8d8d8;}
+.navbar-brand {height: 66px;line-height: 45px;padding: 10px 15px;}
+.navbar-nav>li>a {line-height: 36px;}
+.navbar-nav>li>a.active {color: #09AEEF;}
+#nav-menu {margin-left: 40px;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	background-color: #f6f6f6;
+	color: #09AEEF ;
+}
+.dropdown-menu>li>a{line-height: 34px;position: relative;padding-left: 44px;}
+.dropdown-menu>li>a img{width: 28px;height: 28px;position: absolute;left: 8px;top: 6px;}
+#nav-login-btn span, #nav-logout-btn span{color: #E41E26;}
+#nav-login-btn img, #nav-logout-btn img{width: 14px;height: 14px;}
+#nav-logout-btn a span{color: #E41E26;}
+#nav-login-btn a:hover {color: #E41E26;}
+#nav-logout-btn a:hover {color: #09AEEF;}
+
+/* Custom carousel */
+.carousel-inner .item {height: 580px;}
+.carousel-inner .item a img{width: 980px;}
+.carousel-indicators li{background: #d8d8d8;border: none;}
+.carousel-indicators .active{background: #E41E26;border: none;}
+.carousel-control.left, .carousel-control.right {background: transparent;color: #ccc;text-shadow: none;transition: all 0.2s linear;}
+.carousel-control:hover, .carousel-control:focus {color: #aaa;text-shadow: none;}
+
+/* Banner Group */
+#product-banners {padding-bottom: 32px; border-bottom: 1px solid #ccc;}
+#product-banners .banner {-webkit-transition: opacity 0.2s linear;-moz-transition: opacity 0.2s linear;transition: opacity 0.2s linear;}
+#product-banners .banner img{width: 320px;}
+#product-banners .banner:hover{opacity: 0.6;}
+
+/* Footer Nav */
+#footer-nav {margin: 16px 0;}
+#footer-nav .col-xs-4 {padding: 1.14em;border-right: 1px solid #d8d8d8;}
+#footer-nav .col-xs-4:last-child{border: none;}
+#footer-nav .col-xs-4 h4{font-size: 1.14em;font-weight: 500;margin-bottom: 1.14em;}
+#footer-nav .col-xs-4 ul li{font-size: 1em ;margin-bottom: 0.7em;}
+
+/* Footer */
+.ft-sosumi{border-top: 1px solid #d8d8d8;padding-top: 6px;}
+.ft-sosumi p{font-size: 0.8em;}
+
+/* Sub Page */
+#main header {position: relative;border-bottom: 1px solid #ccc;padding-bottom: 54px;}
+#main .feature{padding-top: 56px;padding-bottom: 48px; border-bottom: 1px solid #ccc;text-align: center;} 
+#main .feature:last-child{border: none;}
+#main .feature h1{margin-bottom: 16px;}
+#main .feature p{margin-bottom: 32px;}
+#scrolldown-btn{text-align: center;}
+#scrolldown-btn a,#scrolltop-btn a{-webkit-transition:opacity 0.2s linear;-moz-transition:opacity 0.2s linear;transition:opacity 0.2s linear;}
+#scrolldown-btn a:hover,#scrolltop-btn a:hover{opacity: 0.6;}
+#scrolltop-btn{position: fixed;bottom: 64px;right: 48px;opacity: 0;-webkit-transition:opacity 0.2s linear;-moz-transition:opacity 0.2s linear;transition:opacity 0.2s linear;}
+.feature-btn-group a{-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;transition:all 0.2s linear;}
+.feature-btn-group a:hover{opacity: 0.6;}
+.feature-btn-group .feature-btn {text-align: center;}
+#garena-download-btn {background: transparent url(../images/garena-btn-download.png) no-repeat top left;width: 224px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;position: absolute;top: 300px;left: 300px;}
+#garena-download-btn-ru {background: transparent url(../images/garena-btn-download-ru.png) no-repeat top left;width: 224px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;position: absolute;top: 300px;left: 300px;}
+
+#garena-download-btn-th {background: transparent url(../images/garena-btn-download-th.png) no-repeat top left;width: 224px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;position: absolute;top: 300px;left: 300px;}
+#garena-download-btn-th:hover {background: transparent url(../images/garena-btn-download-active-th.png) no-repeat top left;}
+
+#garena-download-btn-id {background: transparent url(../images/garena-btn-download-id.png) no-repeat top left;width: 224px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;position: absolute;top: 300px;left: 300px;}
+#garena-download-btn-id:hover{background: transparent url(../images/garena-btn-download-active-id.png) no-repeat top left;}
+
+#talktalk-website-btn {display: block; background: transparent url(../images/talktalk-btn-website.png) no-repeat top left;width: 228px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: 0 auto;}
+
+#talktalk-website-btn-th {display: block; background: transparent url(../images/talktalk-btn-website-th.png) no-repeat top left;width: 228px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: 0 auto;}
+#talktalk-website-btn-th:hover{background: transparent url(../images/talktalk-btn-website-active-th.png) no-repeat top left;}
+
+#beetalk-website-btn {display: block; background: transparent url(../images/beetalk-btn-website.png) no-repeat top left;width: 237px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: -16px auto 16px;}
+#beetalk-website-btn-ru {display: block; background: transparent url(../images/beetalk-btn-website-ru.png) no-repeat top left;width: 237px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: -16px auto 16px;}
+
+#beetalk-website-btn-th {display: block; background: transparent url(../images/beetalk-btn-website-th.png) no-repeat top left;width: 237px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: -16px auto 16px;}
+#beetalk-website-btn-th:hover{background: transparent url(../images/beetalk-btn-website-active-th.png) no-repeat top left;}
+
+#beetalk-website-btn-id {display: block; background: transparent url(../images/beetalk-btn-website-id.png) no-repeat top left;width: 237px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: -16px auto 16px;}
+#beetalk-website-btn-id:hover{background: transparent url(../images/beetalk-btn-website-active-id.png) no-repeat top left;}
+
+#garena-download-btn:hover{background: transparent url(../images/garena-btn-download-active.png) no-repeat top left;}
+#talktalk-website-btn:hover{background: transparent url(../images/talktalk-btn-website-active.png) no-repeat top left;}
+#beetalk-website-btn:hover{background: transparent url(../images/beetalk-btn-website-active.png) no-repeat top left;}
+
+.download-list{text-align: center;margin-top: -280px;margin-left: 300px;}
+
+.download-list-item{display: inline-block;vertical-align: top;}
+
+.download-list-item span{display: block;width: 100px;height: 100px;}
+
+#beetalk-btn-qr span{background: transparent url(../images/beetalk-btn-qr.png) no-repeat left top;}
+#beetalk-btn-qr-ru span{background: transparent url(../images/beetalk-btn-qr-ru.png) no-repeat left top;}
+
+#beetalk-btn-ios span{background: transparent url(../images/beetalk-btn-ios.png) no-repeat left top;}
+#beetalk-btn-ios-id span{background: transparent url(../images/beetalk-btn-ios-id.png) no-repeat left top;}
+#beetalk-btn-ios-ru span{background: transparent url(../images/beetalk-btn-ios-ru.png) no-repeat left top;}
+
+#beetalk-btn-ios a:hover span{opacity: 0.8;}
+#beetalk-btn-ios-id a:hover span{opacity: 0.8;}
+
+#beetalk-btn-android span{background: transparent url(../images/beetalk-btn-android.png) no-repeat left top;}
+#beetalk-btn-android-id span{background: transparent url(../images/beetalk-btn-android-id.png) no-repeat left top;}
+#beetalk-btn-android-ru span{background: transparent url(../images/beetalk-btn-android-ru.png) no-repeat left top;}
+
+.beetalk-download-list{position: absolute;top:270px;right: 150px;}
+#beetalk-btn-android a:hover span{opacitfy:0.8;}
+#beetalk-btn-android-id a:hover span{opacitfy:0.8;}
+
+/* Retina Display */
+@media only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+		#garena-download-btn {background: transparent url(../images/garena-btn-download@2x.png) no-repeat top left;background-size: contain;}
+		#garena-download-btn-th {background: transparent url(../images/garena-btn-download-th@2x.png) no-repeat top left;background-size: contain;}
+		#garena-download-btn-id {background: transparent url(../images/garena-btn-download-id2x.png) no-repeat top left;background-size: contain;}
+		#garena-download-btn:hover {background: transparent url(../images/garena-btn-download-active@2x.png) no-repeat top left;background-size: contain;}
+		#garena-download-btn-th:hover {background: transparent url(../images/garena-btn-download-active-th@2x.png) no-repeat top left;background-size: contain;}
+		#garena-download-btn-id:hover {background: transparent url(../images/garena-btn-download-active-id@2x.png) no-repeat top left;background-size: contain;}
+		#talktalk-website-btn {background: transparent url(../images/talktalk-btn-website@2x.png) no-repeat top left;background-size: contain;}
+		#talktalk-website-btn-th {background: transparent url(../images/talktalk-btn-website-th@2x.png) no-repeat top left;background-size: contain;}
+		#talktalk-website-btn:hover {background: transparent url(../images/talktalk-btn-website-active@2x.png) no-repeat top left;background-size: contain;}
+		#talktalk-website-btn-th:hover {background: transparent url(../images/talktalk-btn-website-active-th@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn {background: transparent url(../images/beetalk-btn-website@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn-th {background: transparent url(../images/beetalk-btn-website-th@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn-id {background: transparent url(../images/beetalk-btn-website-id@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn:hover {background: transparent url(../images/beetalk-btn-website-active@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn-th:hover {background: transparent url(../images/beetalk-btn-website-active-th@2x.png) no-repeat top left;background-size: contain;}
+		#beetalk-website-btn-id:hover {background: transparent url(../images/beetalk-btn-website-active-id@2x.png) no-repeat top left;background-size: contain;}
+	}
+
+	
+	
+/* GAS */
+@font-face
+{
+font-family: 'ThaiSans Neue';
+src: url(../fonts/ThaiSansNeue-Bold.ttf);
+}
+.font-gas{
+color: #C41620;
+font-family: ThaiSans Neue, "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 24px;
+}
+.gas-header{  position: relative;z-index: -1;}
+#gas-website-btn-th {display: block; background: transparent url(../images/gas-btn-website-th.png) no-repeat top left;width: 237px;height: 60px;border: none;-webkit-transition: all 0.2s linear;-moz-transition: all 0.1s ease-in-out;transition: all 0.2s linear;margin: -100px auto 16px;  background-position: center;z-index:999;}
+#gas-website-btn-th:hover{opacity: 0.9;}
+.icon-menu {
+  display: inline-block;
+  background: url(../images/gas-icon-th.png) no-repeat 0 0;
+  background-size: 158px 35px;
+  margin: -3px auto;
+}
+.icon-lucky{width: 43px;height: 34px;background-position: 0 0;}
+.icon-discover{width: 38px;height: 34px;background-position: -44px 0;}
+.icon-mobile{width: 32px;height: 34px;background-position: -79px 0;}
+.icon-chat{width: 49px;height: 37px;background-position: -112px 0;}
+
+.gas-download-list{text-align: center;margin-top: -280px;margin-left: 300px;}
+.gas-download-list{position: absolute;top: 517px;right: 62px;}
+
+.gas-download-list-item{display: inline-block;vertical-align: top;  margin: 0 6px;}
+
+.gas-download-list-item span{display: block;width: 110px;height: 110px;}
+
+#gas-btn-qr span{background: transparent url(../images/gas-btn-qr-th.png) no-repeat left top;background-position: center;z-index:99;}
+
+#gas-btn-ios span{background: transparent url(../images/gas-btn-ios-th.png) no-repeat left top;background-position: center;z-index:99;}
+
+#gas-btn-ios a:hover span{opacity: 0.8;}
+
+#gas-btn-android span{background: transparent url(../images/gas-btn-android-th.png) no-repeat left top;background-position: center;z-index:99;}
+
+#gas-btn-android a:hover span{opacity: 0.8;}
+
+/* Add for garena plus page*/
+@font-face {
+   font-family: headerFont;
+   src: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/hi.otf");
+}
+@font-face {
+   font-family: subHeaderFont;
+   src: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/hi.otf");
+}
+	.more_text {
+		position: absolute;
+		top: 600px;
+		left: 391px;
+		height: 41px;
+		width: 240px;
+		font-family: 'Helvetica Neue LT Pro';
+		font-size: 18px;
+		font-weight: 300;
+		color: rgba(210, 81, 81, 1);
+		text-align: center;
+	}
+
+	.more_button {
+		position: absolute;
+		top: 626px;
+		left: 501px;
+		height: 14px;
+		width: 17px;
+		background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/icon_downarrow.png") no-repeat center;
+
+	}
+	.plus_section {
+		height: 664px;
+	}
+	section .present {
+
+	}
+
+	#main .feature {
+		height: 664px;
+		border-bottom: none;
+	}
+	section .test1 {
+		z-index: 2;
+	}
+	.plus_head_img1 {
+		width: 491px;
+		height: 474px;
+		position: absolute;
+		right: 86px;
+		top: 130px;
+		z-index: 0;
+	}
+	.plus_head_img2 {
+		position: absolute;
+		top: 239px;
+		z-index: -1;
+	}
+
+	.plus_chats_img1 {
+		width: 893px;
+		height: 373px;
+		left: 111px;
+		top: 1685px;
+		z-index: -1;
+	}
+
+	.plus_chats_img2 {
+		width: 364px;
+		height: 604px;
+		left: 436px;
+		z-index: -2;
+	}
+
+	.plus_chats_img3 {
+		width: 183px;
+		height: 177px;
+		right: 86px;
+		top: 130px;
+		z-index: -3;
+	}
+	.container {
+		width: 1050px;
+	}
+
+	#main {
+		width:1050px;
+	}
+
+	.guide {
+	/*padding-top: $navbar-height;*/
+	padding-top: 10px;
+}
+
+	.downloadButton {
+		position: absolute;
+		top: 315px;
+		right: 600px;
+		height: 55px;
+		width: 240px;
+		background-color: rgba(214, 1, 5, 1);
+		border-radius: 5px;
+		box-shadow: 0px 4px 11px 0px rgba(214, 1, 5, 0.3);
+{#		font-family: 'Helvetica Neue';#}
+		font-size: 16px;
+		color: rgba(255, 255, 255, 1);
+		text-align: center;
+	}
+	.downloadButton--old {
+		position: absolute;
+		top: 380px;
+		left: 181px;
+		height: 24px;
+		width: 238px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 3px;
+	}
+	.downloadButton--old:hover {
+		text-decoration: underline;
+	}
+
+	.downloadButton:hover {
+		background-color: rgba(250, 1, 5, 1);
+		transition: 0.5s;
+	}
+
+.guide__inner {
+	position: relative;
+	/*width: $content-width;*/
+	width: 100%;
+	height: 720px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.guide__inner--simple {
+	height: 880px;
+}
+
+.guide__inner--exclusive {
+	height: 664px;
+}
+
+.guide__inner--xplatform {
+	height: 620px;
+}
+
+.guide__section {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.guide__text {
+	position: relative;
+	z-index: 2;
+}
+
+.guide__bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.guide__header {
+{#	font-size: 48px;#}
+{#	color: #fff;#}
+{#	font-weight: 700;#}
+{#	margin: 30px 0;#}
+	position: absolute;
+	height: 65px;
+	width: 340px;
+	font-family: open sans, "Helvetica Neue";
+	font-size: 48px;
+	font-weight: 400;
+	color: rgba(212, 53, 59, 1);
+	text-align: right;
+}
+
+.guide__header--blue {
+	width: 250px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	color: #00b1ff;
+	border-bottom: 5px solid #00b1ff;
+	text-align: center;
+}
+
+.guide__bg .layer {
+	position: absolute;
+}
+
+.guide__header--exclusive {
+
+	position: absolute;
+	height: 65px;
+	width: 341px;
+	font-family: headerFont;
+	font-size: 56px;
+	color: rgba(212, 53, 59, 1);
+	text-align: right;
+	top: 145px;
+	right: 600px;
+	z-index: 4;
+	font-weight: 400;
+}
+
+.guide__header--gplus {
+	top: 100px;
+	left: 339px;
+	text-align: center;
+}
+
+.guide__header--simple {
+	top: 240px;
+	right: 600px;
+	z-index: 4;
+}
+
+.guide__header--xplatform {
+	top: 310px;
+	right: 600px;
+	z-index: 4;
+}
+
+.guide__subheader {
+{#	top: 272px;#}
+{#	right: 800px;#}
+{#	z-index: 4;#}
+	position: absolute;
+	height: 132px;
+	width: 380px;
+	font-family: open sans, "Helvetica Neue";
+	font-size: 16px;
+	color: rgba(18, 19, 20, 1);
+	text-align: right;
+	font-weight: 400;
+}
+
+.guide__subheader--exclusive {
+	font-family: subHeaderFont;
+	top: 219px;
+	right: 600px;
+	width: 345px;
+}
+
+.guide__subheader--gplus {
+	top: 162px;
+	left: 319px;
+	text-align: center;
+}
+
+.guide__subheader--simple {
+	top: 300px;
+	right: 600px;
+	width: 320px;
+	z-index: 4;
+}
+
+.guide__subheader--xplatform {
+	top: 370px;
+	right: 600px;
+	z-index: 4;
+}
+
+.guide__bg--exclusive .layer:nth-child(1) {
+	top: 97px;
+	right: 86px;
+	z-index: 4;
+}
+
+.guide__bg--exclusive .layer:nth-child(2) {
+	top: 252px;
+	z-index: 2;
+}
+
+.guide__bg--exclusive .layer-th {
+	right: -27px;
+}
+
+.guide__bg--exclusive .layer:nth-child(3) {
+	right: 50px;
+	bottom: -5px;
+	z-index: 3;
+}
+
+.guide__bg--exclusive .layer:nth-child(4) {
+	top: 230px;
+	left: -30px;
+}
+
+.guide__bg--exclusive .guide__bg-1 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/bck_garenapcui.png") no-repeat center;
+	width: 491px;
+	height: 478px;
+}
+
+.guide__bg--exclusive .guide__bg-2 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/icon_garena_main.png") no-repeat center;
+	width: 1017px;
+	height: 244px;
+}
+
+.guide__bg--gplus .layer:nth-child(1) {
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.guide__bg--gplus .layer:nth-child(2) {
+	bottom: -8px;
+	left: 0;
+	z-index: -2;
+}
+
+.guide__bg--gplus .layer:nth-child(3) {
+	right: -519px;
+	bottom: -10px;
+	z-index: 3;
+}
+
+.guide__bg--gplus .layer:nth-child(4) {
+	bottom: 0;
+	right: -572px;
+	z-index: 2;
+}
+
+.guide__bg--gplus .layer:nth-child(5) {
+	right: -150px;
+	bottom: 190px;
+	z-index: 5;
+}
+
+.guide__bg--gplus .layer:nth-child(6) {
+	right: -130px;
+	top: 120px;
+	z-index: 1;
+}
+
+.guide__bg--gplus .guide__bg-1 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/games.png") no-repeat center;
+	width: 1020px;
+	height: 441px;
+}
+
+.guide__bg--gplus .guide__bg-2 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/shadows.png") no-repeat center;
+	width: 1020px;
+	height: 441px;
+}
+
+.guide__bg--gplus .guide__bg-3 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 1059px;
+	height: 699px;
+}
+
+.guide__bg--gplus .guide__bg-4 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 1112px;
+	height: 698px;
+}
+
+.guide__bg--gplus .guide__bg-5 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 694px;
+	height: 273px;
+}
+
+.guide__bg--gplus .guide__bg-6 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 232px;
+	height: 226px;
+}
+
+.guide__bg--gplus .guide__bg-7 {
+	position: absolute;
+	top: 22px;
+	left: 35px;
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 230px;
+	height: 230px;
+	z-index: -1;
+	border-radius: 100%;
+/*&:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(203, 40, 98, 0.8)
+        border-radius: 100%*/;
+}
+
+.guide__bg--simple .layer:nth-child(1) {
+	top: 239px;
+	right: 220px;
+	z-index: 3;
+}
+
+.guide__bg--simple .layer:nth-child(2) {
+	top: 461px;
+	right: 54px;
+	z-index: 4;
+}
+
+.guide__bg--simple .layer:nth-child(3) {
+	top: 381px;
+	left: 12px;
+	z-index: 2;
+}
+
+.guide__bg--simple .layer:nth-child(4) {
+	top: 348px;
+	right: 636px;
+	z-index: 2;
+}
+
+.guide__bg--simple .layer:nth-child(5) {
+	top: 293px;
+	right: 464px;
+	z-index: 2;
+}
+
+.guide__bg--simple .layer:nth-child(6) {
+	top: 378px;
+	right: 51px;
+	z-index: 2;
+}
+
+.guide__bg--simple .guide__bg-1 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/bck_chats_friendslist.png") no-repeat center;
+	width: 364px;
+	height: 604px;
+}
+
+.guide__bg--simple .guide__bg-2 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/bck_chats_chatui.png") no-repeat center;
+	width: 846px;
+	height: 330px;
+}
+
+.guide__bg--simple .guide__bg-3 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/emoji01.png") no-repeat center;
+	width: 183px;
+	height: 177px;
+}
+
+.guide__bg--simple .guide__bg-4 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/emoji02.png") no-repeat center;
+	width: 183px;
+	height: 177px;
+}
+
+.guide__bg--simple .guide__bg-5 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/emoji03.png") no-repeat center;
+	width: 183px;
+	height: 177px;
+}
+
+.guide__bg--simple .guide__bg-6 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/emoji04.png") no-repeat center;
+	width: 183px;
+	height: 177px;
+}
+
+.guide__bg--simple .guide__bg-7 {
+	position: absolute;
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/b.png") no-repeat center;
+	width: 230px;
+	height: 230px;
+	border-radius: 100%;
+	right: 35px;
+	bottom: 45px;
+	z-index: -1;
+/*&:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(203, 40, 98, 0.8)
+        border-radius: 100%*/;
+}
+
+.guide__bg--xplatform .layer:nth-child(1) {
+	top: 218px;
+	right: 114px;
+	z-index: 3;
+}
+
+.guide__bg--xplatform .layer:nth-child(2) {
+	top: 194px;
+	right: 74px;
+	z-index: 4;
+}
+
+.guide__bg--xplatform .layer:nth-child(3) {
+	top: 133px;
+	left: 143px;
+	z-index: 2;
+}
+
+.guide__bg--xplatform .layer:nth-child(4) {
+	bottom: 50px;
+	left: 310px;
+	z-index: 6;
+}
+
+.guide__bg--xplatform .guide__bg-1 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/bck_voicechatroomlist.png") no-repeat center;
+	width: 492px;
+	height: 317px;
+}
+
+.guide__bg--xplatform .guide__bg-2 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/bck_voicechatui.png") no-repeat center;
+	width: 475px;
+	height: 353px;
+}
+
+.guide__bg--xplatform .guide__bg-3 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/icons_voice.png") no-repeat center;
+	width: 422px;
+	height: 433px;
+}
+
+.guide__bg--xplatform .guide__bg-4 {
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/a.png") no-repeat center;
+	width: 964px;
+	height: 429px;
+}
+
+.guide__section:nth-child(1) .guide__inner {
+{#	padding-top: 90px;#}
+}
+
+.guide__section:nth-child(2) .guide__inner {
+{#	padding-top: 300px;#}
+}
+
+.guide__section:nth-child(2) .guide__text {
+{#	float: right;#}
+}
+
+.guide__section:nth-child(3) .guide__inner {
+{#	padding-top: 350px;#}
+}
+
+.guide__section:nth-child(4) .guide__inner {
+{#	padding-top: 350px;#}
+}
+
+.guide__section:nth-child(4) .guide__text {
+{#	float: right;#}
+{#	padding-right: 250px;#}
+}
+
+
+
+.guide__subheader--black {
+	color: #201c20;
+}
+
+.guide__subheader + .guide__subheader {
+	margin-top: 30px;
+}
+
+.guide__buttons {
+	margin-top: 80px;
+}
+
+.guide__button {
+	display: block;
+	position: relative;
+	width: 230px;
+	height: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 46px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+
+.guide__button--white {
+	color: #d4353b;
+	background-color: #fff;
+}
+
+.guide__scrolldown:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: url("https://cdngarenanow-a.akamaihd.net/webmain/static/garenaweb/images/plus/icon-down.png") no-repeat center;
+	right: 17px;
+	top: 16px;
+}
+
