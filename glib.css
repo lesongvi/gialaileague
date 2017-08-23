@@ -1,0 +1,514 @@
+#gheader {
+    background-image: -webkit-linear-gradient(bottom, #1b1c1d, #111);
+    background-image: -moz-linear-gradient(bottom, #1b1c1d, #111);
+    background-image: -o-linear-gradient(bottom, #1b1c1d, #111);
+    background-image: linear-gradient(to top, #1b1c1d, #111);
+    color: #bababa;
+    position: relative;
+    z-index: 499;
+}
+
+#gheader li {
+    margin-left: 0;
+}
+
+#gheader-content {
+    width: 968px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 51px;
+}
+
+#gheader-banner {
+    display: inline-block;
+    width: 250px;
+    height: 51px;
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/gheader-banner.jpg) no-repeat;
+    position: absolute;
+    left: 156px;
+    top: 0;
+    z-index: 1;
+}
+
+#gheader-popover-banner {
+    width: 0;
+    height: 300px;
+    max-height: 0;
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/gheader-popover-banner.jpg) no-repeat;
+    position: absolute;
+    left: -156px;
+    -webkit-transition: max-height .1s;
+    -moz-transition: max-height .1s;
+    -ms-transition: max-height .1s;
+    -o-transition: max-height .1s;
+    transition: max-height .1s;
+}
+
+#gheader-banner:hover #gheader-popover-banner {
+    width: 970px;
+    max-height: 300px;
+}
+
+#gheader-btns {
+    margin-top: 12px;
+    margin-right: 5px;
+    position: absolute;
+    right: 75px;
+    top: 0;
+    padding-left: 0;
+    line-height: 1;
+}
+
+#gheader-btns > li {
+    display: inline-block;
+    font-family: Tahoma, Geneva, sans-serif;
+    vertical-align: top;
+    white-space: nowrap;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+    margin-top: 3px;
+}
+
+.gheader-btn {
+    font-size: 10.55px;
+    font-weight: bold;
+    background-color: #2f2f2f;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-shadow: 0 1px rgba(84,84,84,.5);
+    -moz-box-shadow: 0 1px rgba(84,84,84,.5);
+    box-shadow: 0 1px rgba(84,84,84,.5);
+}
+
+.gheader-btn:hover {
+    background-color: #444;
+}
+
+.gheader-btn a {
+    display: block;
+    color: #b8b8b8;
+    text-decoration: none;
+    padding: 5px 12px;
+}
+
+.gheader-separater {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: #595959;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+#gheader-games span {
+    display: block;
+    color: #595959;
+    font-size: 13px;
+    border: 1px solid #595959;
+    font-weight: bold;
+    padding: 5px 12px;
+    position: relative;
+    margin-bottom: 1px;
+    width: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#gheader-games span:after {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/gheader-arrow.jpg) no-repeat;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+#gheader-games ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 39px;
+}
+
+#gheader-games:hover ul {
+    max-height: 300px;
+}
+
+#gheader-games li + li:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #888;
+    margin: 0 12px;
+}
+
+#gheader-games li a {
+    display: block;
+    text-decoration: none;
+    color: #bababa;
+    padding: 5px 12px;
+    width: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+#gheader-games li a:hover {
+    color: black;
+    background-color: rgba(255,255,255,.7);
+    padding-left: 24px;
+}
+
+#gheader-beetalk {
+    position: absolute;
+    top: 12px;
+    right: 36px;
+    width: 30px;
+    height: 30px;
+}
+
+#gheader-popover-beetalk {
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/popover-beetalk.png) no-repeat;
+    width: 180px;
+    height: 334px;
+    position: absolute;
+    top: 30px;
+    right: -33px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    -webkit-transform-origin: 133px top;
+    -moz-transform-origin: 133px top;
+    -ms-transform-origin: 133px top;
+    -o-transform-origin: 133px top;
+    transform-origin: 133px top;
+}
+
+#gheader-beetalk:hover #gheader-popover-beetalk {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+#gheader-btn-beetalk-ios,
+#gheader-btn-beetalk-android {
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    display: block;
+}
+
+#gheader-btn-beetalk-ios {
+    left: 0;
+    width: 55%;
+}
+
+#gheader-btn-beetalk-android {
+    right: 0;
+    width: 45%;
+}
+
+#gheader-gas {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 33px;
+    height: 34px;
+}
+
+#gheader-popover-gas {
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/popover-gas.png) no-repeat;
+    width: 180px;
+    height: 355px;
+    position: absolute;
+    top: 30px;
+    right: -33px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    -webkit-transform-origin: 133px top;
+    -moz-transform-origin: 133px top;
+    -ms-transform-origin: 133px top;
+    -o-transform-origin: 133px top;
+    transform-origin: 133px top;
+}
+
+#gheader-gas:hover #gheader-popover-gas {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+#gheader-btn-gas-apk,
+#gheader-btn-gas-ios {
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    display: block;
+}
+
+#gheader-btn-gas-apk {
+    left: 0;
+    width: 45%;
+}
+
+#gheader-btn-gas-ios {
+    right: 0;
+    width: 55%;
+}
+
+.gfooter {
+    background-color: black;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.gfooter ul {
+    padding: 0;
+    margin: 0;
+}
+
+.gfooter li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.gfooter .gfooter-logo {
+    margin-right: 10px;
+}
+
+.gfooter .gfooter-icon {
+    margin-left: 5px;
+}
+
+#gfooter-copyright {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    color: white;
+    margin: 0 20px;
+    text-align: left;
+    width: 450px;
+}
+
+#gfooter-copyright a {
+    color: white;
+}
+
+#gfooter-bs #gfooter-copyright {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 360px;
+}
+
+#gfooter-cm #gfooter-copyright {
+    font-family: Helvetica, sans-serif;
+    color: #848484;
+}
+
+#gfooter-fo3 #gfooter-copyright {
+    width: 785px;
+    font-size: 9px;
+    line-height: 10px;
+    margin: 0;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+#gfooter-lol #gfooter-copyright {
+    color: gray;
+    width: 480px;
+    line-height: 1.1;
+}
+
+#gfooter-mstar {
+    border-top: 3px solid #2e2439;
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/bg-footer-mstar.png) repeat;
+}
+
+#gfooter-mstar #gfooter-copyright {
+    width: 460px;
+    font-size: 12px;
+    margin: 0;
+    color: #A69EB7;
+}
+
+#gfooter-pb #gfooter-copyright {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    width: 500px;
+}
+
+#gfooter-poe #gfooter-copyright {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #3F3D39;
+    width: 520px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#gfooter-poe #gfooter-copyright a {
+    color: #3F3D39;
+}
+
+.gmodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+}
+
+.gmodal-overlay.gmodal-trigger {
+    cursor: auto;
+}
+
+.gmodal {
+    display: none;
+}
+
+.gmodal.active {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.gmodal .gbtn-close {
+    display: none;
+    width: 39px;
+    height: 44px;
+    background: url(http://cdn.garenanow.com/webupdate/games/sg/assets/img/gmodal-btn-close.png) no-repeat;
+    position: absolute;
+    top: -22px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.gmodal.active  .gbtn-close {
+    display: block;
+}
+
+.gmodal-trigger,
+.gscrollspy > li {
+    cursor: pointer;
+}
+
+.gcountdown-unit {
+    display: inline-block;
+}
+
+.gcountdown-unit:after {
+    display: inline-block;
+    white-space: pre;
+}
+
+.gcountdown[data-label-type="colons"] .gcountdown-unit:not(:last-child):after {
+    content: ' : ';
+}
+
+.gcountdown[data-label-type="short"] .gcountdown-days:after,
+.gcountdown[data-label-type="full"] .gcountdown-days:after {
+    content: ' Days ';
+}
+
+.gcountdown[data-label-type="short"] .gcountdown-hrs:after {
+    content: ' Hrs ';
+}
+
+.gcountdown[data-label-type="full"] .gcountdown-hrs:after {
+    content: ' Hours ';
+}
+
+.gcountdown[data-label-type="short"] .gcountdown-mins:after {
+    content: ' Mins ';
+}
+
+.gcountdown[data-label-type="full"] .gcountdown-mins:after {
+    content: ' Minutes ';
+}
+
+.gcountdown[data-label-type="short"] .gcountdown-secs:after {
+    content: ' Secs';
+}
+
+.gcountdown[data-label-type="full"] .gcountdown-secs:after {
+    content: ' Seconds';
+}
+
+.gcoverflow > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.gcoverflow-trigger {
+    cursor: pointer;
+}
+
+.gfixed {
+    position: absolute;
+    -webkit-transition: all .5s .5s;
+    -moz-transition: all .5s .5s;
+    -ms-transition: all .5s .5s;
+    -o-transition: all .5s .5s;
+    transition: all .5s .5s;
+}
+
