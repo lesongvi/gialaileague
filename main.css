@@ -14,25 +14,25 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(/frontend/css/font/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  src: local('Open Sans'), local('OpenSans'), url(http://fo3.giaidau.vn/frontend/css/font/59ZRklaO5bWGqF5A9baEET8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(/frontend/css/font/MTP_ySUJH_bn48VBG8sNSnwUvq1pQaUIDqPgpae5ItU.woff) format('woff');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fo3.giaidau.vn/frontend/css/font/MTP_ySUJH_bn48VBG8sNSnwUvq1pQaUIDqPgpae5ItU.woff) format('woff');
 }
 @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(/frontend/css/font/gk5FxslNkTTHtojXrkp-xKzhfLGYMo1TX3XnL4EHuCg.woff) format('woff');
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fo3.giaidau.vn/frontend/css/font/gk5FxslNkTTHtojXrkp-xKzhfLGYMo1TX3XnL4EHuCg.woff) format('woff');
 }
 @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(/frontend/css/font/gk5FxslNkTTHtojXrkp-xCCpk0U-A1e26dz4Hiu3OHc.woff) format('woff');
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://fo3.giaidau.vn/frontend/css/font/gk5FxslNkTTHtojXrkp-xCCpk0U-A1e26dz4Hiu3OHc.woff) format('woff');
 }
 
 /*------------------------------------------------------------------
@@ -113,7 +113,7 @@ Header + Navbar*/
 .header .brand{padding:7px 0;}
 .navbar .nav > li > a:hover,.dropdown-menu > li > a:hover{color:#C96}
 .navbar .nav > li { display: inline-block;}
-.navbar .nav > li .avatar { background:url(/frontend/img/avatar.png) left no-repeat; padding-left:20px !important; line-height:20px;  color:#FF9900 !important; margin-left:3px;}
+.navbar .nav > li .avatar { background:url(http://fo3.giaidau.vn/frontend/img/avatar.png) left no-repeat; padding-left:20px !important; line-height:20px;  color:#FF9900 !important; margin-left:3px;}
 .navbar .nav > li .avatar:hover, .logout:hover { text-decoration:underline !important}
 .logout {  color:#FF9900 !important;}
 .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus,.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{background-color:transparent;color:#FF9900}
@@ -125,16 +125,16 @@ Header + Navbar*/
 .navbar-inner .nav {margin-top:0px; width:100%;background-image: linear-gradient(to bottom, #363636, #000000);}
 .navbar-inner .nav li {background:url(../img/linebg.png) center right no-repeat; padding:0 3px}
 .boxjoin { position:absolute; top:-30px; right:10px}
-.boxjoin .join { background: #000 url(/frontend/img/join.png) 5px center no-repeat; padding:7px 7px 7px 45px; color:#fff; border-radius:5px; border:1px solid #ccc}
+.boxjoin .join { background: #000 url(http://fo3.giaidau.vn/frontend/img/join.png) 5px center no-repeat; padding:7px 7px 7px 45px; color:#fff; border-radius:5px; border:1px solid #ccc}
 .boxjoin .join:hover { background-color:#3a3a3a}
 .alert { margin-top:20px;}
 
 /*------------------------------------------------------------------
 Content*/
-.wrapper .container-texture{/*background:url(/frontend/img/tmp/texture.png) no-repeat 0 0 #222 padding-top:30px;*/ }
+.wrapper .container-texture{/*background:url(http://fo3.giaidau.vn/frontend/img/tmp/texture.png) no-repeat 0 0 #222 padding-top:30px;*/ }
 .wrapper .container{position:relative; background-color:#fff;-moz-border-radius-bottomright: 3px;-webkit-border-bottom-right-radius: 3px;
 border-bottom-right-radius: 3px;-moz-border-radius-bottomleft: 3px;-webkit-border-bottom-left-radius: 3px;border-bottom-left-radius: 3px;  padding-bottom:30px}
-.wrapper .container #rightshadow{right:-30px;background:url(/frontend/img/tmp/right-shadow-wrapper.png) no-repeat right 0}
+.wrapper .container #rightshadow{right:-30px;background:url(http://fo3.giaidau.vn/frontend/img/tmp/right-shadow-wrapper.png) no-repeat right 0}
 .wrapper .inner-container{margin:20px;min-height:600px}
 .wrapper .inner-container h2{font-size:18px;line-height:22px}
 .wrapper .inner-container h3{font-size:14px;line-height:18px}
@@ -152,9 +152,9 @@ Slide Team*/
 #boxSlide p{ margin: 0px; }
 
 /*.slide-team{position:relative}
-.slide-team .slide-wrapper-top{background:url(/frontend/img/tmp/frame-sprite.png) no-repeat center 0;height:50px;width:942px;position:absolute;top:-22px;left:-1px;z-index:1}
-.slide-team .slide-wrapper-bottom{background:url(/frontend/img/tmp/frame-sprite.png) no-repeat center bottom;height:50px;width:942px;position:absolute;right:-1px;bottom:-20px;z-index:1}
-.slide-team .slide{background:url(/frontend/img/tmp/frame-center.png) repeat-y center 0;padding:0 15px}*/
+.slide-team .slide-wrapper-top{background:url(http://fo3.giaidau.vn/frontend/img/tmp/frame-sprite.png) no-repeat center 0;height:50px;width:942px;position:absolute;top:-22px;left:-1px;z-index:1}
+.slide-team .slide-wrapper-bottom{background:url(http://fo3.giaidau.vn/frontend/img/tmp/frame-sprite.png) no-repeat center bottom;height:50px;width:942px;position:absolute;right:-1px;bottom:-20px;z-index:1}
+.slide-team .slide{background:url(http://fo3.giaidau.vn/frontend/img/tmp/frame-center.png) repeat-y center 0;padding:0 15px}*/
 .carousel-indicators{
 	background-color:#000;background-color:rgba(0,0,0,.8);
 	/*left:0;right:0;*/
@@ -170,14 +170,14 @@ Slide Team*/
 .carousel-indicators li.active img,.carousel-indicators li:hover img{opacity:1.0;filter:alpha(opacity=100);}
 /*------------------------------------------------------------------
 Info Tournament*/
-.icon-type-tournament{background:url(/frontend/img/tmp/sprite.png) no-repeat 0 0;width:99px;height:80px}
+.icon-type-tournament{background:url(http://fo3.giaidau.vn/frontend/img/tmp/sprite.png) no-repeat 0 0;width:99px;height:80px}
 #img-semi-gold{background-position:0 -93px}
 #img-semi-silver{background-position:0 -204px;height:100px}
 #img-semi-bronze{background-position:0 -322px;height:100px}
 #img-serie-c-cup{background-position:0 -438px}
 .section-tournament-law .row-fluid{width:830px}
 .section-common-info{text-align:center}
-.icon-common-info{background-image:url(/frontend/img/tmp/sprite.png);background-repeat:no-repeat;height:85px;width:100px;display:inline-block}
+.icon-common-info{background-image:url(http://fo3.giaidau.vn/frontend/img/tmp/sprite.png);background-repeat:no-repeat;height:85px;width:100px;display:inline-block}
 .icon-time{background-position:center -537px}
 .icon-type{background-position:center -637px}
 .icon-prize{background-position:center -736px}
@@ -231,7 +231,7 @@ Bracket*/
 /*------------------------------------------------------------------
 Profile*/
 .nav-profile{padding-top:30px}
-.nav-profile .profileL{ width:48%; float:left; background:url(/frontend/img/tmp/bgd_line.jpg) top right no-repeat; margin-right:2%;}
+.nav-profile .profileL{ width:48%; float:left; background:url(http://fo3.giaidau.vn/frontend/img/tmp/bgd_line.jpg) top right no-repeat; margin-right:2%;}
 .nav-profile dl{ overflow:hidden}
 .nav-profile dl dd{ float:left; margin:0 20px 0 0}
 .nav-profile dl dd img{border:1px solid #333}
@@ -262,10 +262,10 @@ Footer
 .footer a{color:#999;-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out}
 .footer a:hover{color:#EEE}
 .footer .container{padding:10px 0}
-.icon-social{background:url(/frontend/img/tmp/logo-social.png) no-repeat 0 0;width:15px;height:23px;display:inline-block}
+.icon-social{background:url(http://fo3.giaidau.vn/frontend/img/tmp/logo-social.png) no-repeat 0 0;width:15px;height:23px;display:inline-block}
 #youtube{background-position:right 0;width:30px}
-.logo-footer{background:url(/frontend/img/tmp/logo-footer.png);height:100px;width:110px;display:inline-block}
-#logo-lmht{background:url(/frontend/img/fo3.png) no-repeat; width:167px; height:73px; margin-top:10px;}
+.logo-footer{background:url(http://fo3.giaidau.vn/frontend/img/tmp/logo-footer.png);height:100px;width:110px;display:inline-block}
+#logo-lmht{background:url(http://fo3.giaidau.vn/frontend/img/fo3.png) no-repeat; width:167px; height:73px; margin-top:10px;}
 #logo-ve{margin-right:20px}*/
 
 #footer{margin-top:30px;font-size:11px;background-color: #1A1D27;  border-top: 2px solid #16A5E8; padding:30px 0}
@@ -295,7 +295,7 @@ Footer
 .searchlist .provine { width:150px; background:#FFF; padding:3px; height:25px;}
 .searchlist .step { width:100px; background:#FFF; padding:4px 10px; height:17px;}
 .searchlist .position { width:100px; background:#FFF; padding:4px 10px; height:17px;}
-.searchlist .bt { background:url(/frontend/img/tmp/thead.gif) repeat-x; border:none; padding:5px 10px;}
+.searchlist .bt { background:url(http://fo3.giaidau.vn/frontend/img/tmp/thead.gif) repeat-x; border:none; padding:5px 10px;}
 .searchlist .bt:hover { color:#FFF}
 
 
@@ -340,7 +340,7 @@ Footer
 .boxprofile .avatatPro img { width:190px; height:180px; background-color: #fff; border: 1px solid #ccc;  padding: 4px; margin-bottom:20px;}
 
 .boxprofile .selecleader{  width:210px; background:#FFF; padding:3px; height:25px;}
-.boxprofile .bt { background:url(/frontend/img/tmp/thead.gif) repeat-x; border:none; padding:5px 10px; border-radius:3px;}
+.boxprofile .bt { background:url(http://fo3.giaidau.vn/frontend/img/tmp/thead.gif) repeat-x; border:none; padding:5px 10px; border-radius:3px;}
 .boxprofile .bt:hover { color:#333}
 /*====== end =================*/
 /*========== Intro ==================*/
