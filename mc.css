@@ -1,0 +1,2058 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend
+{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent;}
+h1, h2, h3, h4, h5, h6{font-weight:normal}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+a, a:link,a:visited {text-decoration:none;color:#3B3B3B}
+a:hover {text-decoration:underline;}
+:focus { }
+.row {clear:both; display: block; overflow: visible;}
+.grid .row,
+.grid_1 .row,
+.grid_2 .row,
+.grid_3 .row,
+.grid_4 .row,
+.grid_5 .row,
+.grid_6 .row,
+.grid_7 .row,
+.grid_8 .row,
+.grid_9 .row,
+.grid_10 .row,
+.grid_11 .row,
+.grid_12 .row {width:100%}
+.grid,.grid_1c, .grid_2c, .grid_3c, .grid_4c, .grid_5c, .grid_6c,.grid_7c,
+.grid_8c,.grid_9c,.grid_10c,.grid_11c {display:inline;float:left;}
+.grid_1c {width:83px;}
+.grid_2c {width:166px;}
+.grid_3c {width:249px;}
+.grid_4c {width:332px;}
+.grid_5c {width:415px;}
+.grid_6c {width:458px;}
+.grid_7c {width:561px;}
+.grid_8c {width:664px;}
+.grid_9c {width:747px;}
+.grid_10c {width:830px;}
+.grid_11c {width:913px;}
+.grid,.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6,.grid_7,
+.grid_8,.grid_9,.grid_10,.grid_11,.grid_12 {display:inline;float:left;padding:0 3px; margin:0 0 10px 6px;}
+.grid_12 { float:none; display:block}
+.grid_1 {width:71px;}
+.grid_2 {width:154px;}
+.grid_3 {width:237px;}
+.grid_4 {width:320px;}
+.grid_5 {width:403px;}
+.grid_6 {width:486px;}
+.grid_7 {width:569px;}
+.grid_8 {width:652px;}
+.grid_9 {width:735px;}
+.grid_10 {width:818px;}
+.grid_11 {width:901px;}
+.grid_12 {width:984px;}
+.grid_12 .grid_4,.grid_8 .grid_4,.grid_4 .grid_4, .grid_8 .grid_2{margin:0 !important;}
+body
+{
+background: #FFFFFF url(http://img.fifa.com/imgml/wmc/wmcheader-bg.png) 0 0 repeat-x scroll;
+font:normal 12px/1.2 Arial, Verdana;
+color:#3b3b3b
+}
+#fwc_masterContainer,
+.fwc_headcontent,
+#fwc_navlev0,
+#fwc_navlev1,
+#fwc_topBox {
+background-color:#DCDCDC;}
+.d3cmsContent:before, .d3cmsContent:after { content:""; display:table; }
+.d3cmsContent , .d3cmsContent:after { clear:both; }
+.d3cmsContent { zoom:1; }
+#bodyContent {clear: left; float: left; width: 664px; }
+#bodyContentExt { margin: 0 auto;width:1002px; }
+#fwc_mainTitle .headerShadow { display: none !important;}
+#fwc_mainTitle .content_header { background: none!important}
+#fwc_mainTitle {width:100%;}
+#thirdRail {
+float: left; width: 332px;
+}
+#fwc_footer { clear:both; margin:0 1px;color:#fff;
+position:relative; height:83px;}
+#fwc_footer .wrapFooter {position:relative;height:83px;width: 1000px;margin: 0 auto;background-color: #326295; z-index:1}
+#fwc_footer img{position:absolute;left:0;top:0;}
+#fwc_footer .wrapFooter div {left:129px;position:absolute;top:17px;}
+#fwc_footer a,#fwc_footer a:link,#fwc_footer a:visited {color:#fff; font-family:Verdana}
+#fwc_footer ul{list-style-type:none;margin:0;padding:0;text-indent:0;}
+#fwc_footer li.first {background:none;}
+#fwc_footer li {background:url("http://img.fifa.com/imgml/fifacom2/menuseparator.png") no-repeat scroll 0 -77px;display:inline;padding:0 0 0 4px;}
+#fwc_footer li, #fwc_footer li a {font-size:10px}
+#fwc_footer li a, #fwc_footer li.copy {padding:0 4px}
+#fwc_footer .mfooter a,
+.mfooter a:link,
+.mfooter a:visited {text-decoration:none}
+#fwc_footer .mfooter a:hover{text-decoration:underline}
+.fwc_bottomRoundCorners { display:none}
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; }
+.clear, .stopFloat {
+clear: both;
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+.clearFloat { clear: both; }
+.left { float:left;}
+.right { float:right;}
+.l {text-align:left;}
+.r {text-align:right;}
+.c {text-align:center;}
+.relative {position:relative}
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0 !important; clip: rect(0 0 0 0); height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;}
+.noHeight{height:0px !important;font-size:1px !important;margin:0 !important;padding:0 !important}
+.noBg {background:none!important}
+.margin3 {margin-left:3px}
+.margin2 {margin-left:2px}
+.margin5 {margin-left:5px}
+.margin6 {margin-left:6px}
+.padding3 {padding-left:3px}
+.padding6 {padding-left:6px}
+.marginRight3 {margin-right:3px}
+.marginRight6 {margin-right:6px}
+.margindown5 {margin: 0 0 5px 0}
+.marginSide3 {margin: 0 3px}
+.lnd-960 { width:960px; height:auto;}
+.lnd-652 { width:652px; height:auto;}
+.lnd-480 { width:480px; height:auto;}
+.lnd-320 { width:320px; height:auto;}
+.lnd-160 { width:160px; height:auto;}
+.lnd-80 { width:80px; height:auto;}
+.sqr-300 { width:300px; height:auto;}
+.sqr-180 { width:180px; height:auto;}
+.sqr-150 { width:150px; height:auto;}
+.sqr-80 { width:80px; height:auto;}
+.sqr-50 { width:50px; height:auto;}
+.prt-384 { width:384px; height:auto;}
+#conterHeader {background: transparent url(http://img.fifa.com/imgml/fifacom2/top_bottom.png) 0 0 no-repeat !important;}
+#workspace, #workspaceMc, #footer {background: transparent url(http://img.fifa.com/imgml/fifacom2/middle.png) 0 0 repeat-y scroll !important;}
+#preContentFooter {background:0 none !important;}
+#footer {padding-top:7px !important;}
+#contentFooter {height:9px !important;margin:0 7px !important;width:983px !important;background-position:-6px -14px !important;}
+#headerBG {display:none;}
+#mmCentre, #mmSpacer {display:none;}
+#fccheaderBG #l, #fccheaderBG #r {height:130px !important;}
+#workspaceMc #fccmcmenu {width:990px !important;height:39px !important;overflow:hidden;top:-51px;}
+#fifacom2_header {font-family:Arial,Sans-Serif;font-size:12px;}
+#fifacom2_header ul {list-style:none outside none;padding:0;}
+#fifacom2_header {width:996px;height:84px;position:relative;z-index:100000;margin:auto;margin-bottom:10px;}
+#fifacom2_header .r1 {width:100%;height:46px;}
+#fifacom2_header .r2 {width:100%;height:30px;}
+#fifacom2_header a {cursor:pointer;}
+#fifacom2_header a:hover, #fifacom2_header a:hover span {text-decoration:none !important;}
+#fifacom2_header .r2 li a:hover {text-decoration:none;color:#224a8c;}
+#fifacom2_logo {
+width:160px;height:45px;float:left;
+}
+#fifacom2_logo a{
+width:160px;height:45px;display:block;
+background: url(http://img.fifa.com/imgml/fifacom2014/fifalogo.png) no-repeat 0 0 transparent;
+}
+#fifacom2_logo a img{
+display:none;
+}
+#fifacom2_lev00menu, #fifacom2_lev01menu, #fifacom2_langmenu {float:left;margin:0;padding:0;}
+#fifacom2_lev00menu, #fifacom2_lev01menu {margin-left:8px;}
+#fifacom2_lev00menu {}
+#fifacom2_lev00menu li {display:block;float:left;background:url(http://img.fifa.com/imgml/fifacom2/menuseparator.png) no-repeat scroll right -7px transparent;height:15px;margin-top:19px;padding:2px 7px 10px 4px;}
+#fifacom2_lev00menu li.first {}
+#fifacom2_lev00menu li.last {background:transparent none;}
+#fifacom2_lev00menu li a {color:#FFFFFF;font-size:14px;font-weight:bold;padding:0 6px 10px;display:block;}
+#fifacom2_lev00menu li>a:hover {text-decoration:none;color:#ffe85c;}
+#fifacom2_lev00menu a.current {color:#ffe85c;background:transparent url(http://img.fifa.com/imgml/fifacom2/lev0current.png) no-repeat scroll center 16px;}
+#fifacom2_lev01menu {padding-left:5px !important;}
+#fifacom2_lev01menu li {display:block;float:left;line-height:30px;background:transparent url(http://img.fifa.com/imgml/fifacom2/menuseparator.png) no-repeat scroll right -35px;padding:0 7px 0 0;}
+#fifacom2_lev01menu li.first {}
+#fifacom2_lev01menu li.last {background:transparent none;position:relative;margin-top: 8px;}
+.ie6 #fifacom2_lev01menu li.last, .ie7 #fifacom2_lev01menu li.last {z-index:1020;}
+#fifacom2_lev01menu li a {font-size:14px;font-weight:bold;margin:0 7px;position:relative;z-index:1020;display:block;}
+.lang_S #fifacom2_lev01menu li a,
+.lang_P #fifacom2_lev01menu li a{ margin: 0 4px;}
+#fifacom2_lev01menu a.current {color:#224a8c;padding-bottom:4px;background:url(http://img.fifa.com/imgml/fifacom2/lev0current.png) no-repeat scroll center bottom transparent;}
+#fifacom2_lev01menu a#fifacom2_associations.current.closed {background-position: center -16px;}
+#fifacom2_associations {float:right;display: block;height: 34px;position:absolute !important;top:-11px;left:-23px;padding-right: 12px;cursor:pointer;height:36px;z-index:1010 !important;}
+.opera #fifacom2_associations {top:-3px}
+.opera #fifacom2_associationsDropdown {top:23px}
+#fifacom2_associations span {display: block;line-height: 22px;padding: 7px 0 5px 24px;margin-right:6px;}
+#fifacom2_associations span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -113px;display:inline;padding:0 18px 0 3px;white-space:nowrap;}
+.ie6 #fifacom2_associations span span, .ie7 #fifacom2_associations span span {line-height:24px;display:block;background-position:right -110px;}
+#fifacom2_associations.open {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat right -156px !important;}
+#fifacom2_associations.open span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -56px;}
+#fifacom2_associations.open span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -83px;}
+.ie6 #fifacom2_associations.open span span, .ie7 #fifacom2_associations.open span span {background-position: right -83px;}
+#fifacom2_langmenu {width:160px;}
+#fifacom2_langmenu li {display:inline;line-height:30px;padding:0 9px 0 4px;background:transparent url(http://img.fifa.com/imgml/fifacom2/menuseparator.png) no-repeat scroll right -42px;}
+#fifacom2_langmenu li.first {padding-left:0;}
+#fifacom2_langmenu li.last {background:transparent none;}
+#fifacom2_langmenu li a {font-size:9px;}
+#fifacom2_club {float:right;height:30px;margin-right:-18px;}
+#fifacom2_club a {font-size:12px;font-weight:bold;}
+.ie7 #fifacom2_club {width:70px !important;}
+#fifacom2_club a.login:hover, #fifacom2_club a.register:hover {text-decoration:none;color:#224a8c;}
+#fifacom2_club a.register {display:block;float:right;margin-top:8px;padding-right:7px;background:url(http://img.fifa.com/imgml/fifacom2/menuseparator.gif) no-repeat scroll right -42px transparent;}
+#fifacom2_club a.login {float:right;display: block;height: 34px;margin-left:-22px;margin-right: 8px;margin-top:-3px;padding-right: 12px;cursor:pointer;height:36px;}
+.ie8 #fifacom2_club a.login span span {line-height:24px;}
+#fifacom2_club a.login span {display: block;line-height: 22px;padding: 7px 0 5px 24px;}
+#fifacom2_club a.login span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -114px;display:inline;padding:0 18px 0 3px;}
+#fifacom2_club #noLogged {position:relative;}
+#fifacom2_club #noLogged.open a.login {color:#000;background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat right -305px;position:relative;z-index:1010;}
+#fifacom2_club #noLogged.open a.login span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -55px;}
+#fifacom2_club #noLogged.open a.login span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -84px;}
+#Fifacom2LoginPopup {position:absolute;color:#000;width:273px; right:8px;top:30px;z-index:1000;}
+#Fifacom2LoginPopup .h {height:10px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -203px;}
+#Fifacom2LoginPopup .c {padding:0 10px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownbg.png) repeat-y;}
+#Fifacom2LoginPopup .f {height:50px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -241px;}
+#Fifacom2LoginPopup .c {overflow:hidden;}
+#Fifacom2LoginPopup .c #d_loginemail, #Fifacom2LoginPopup .c #d_loginpwd {overflow:hidden;margin:4px;}
+#Fifacom2LoginPopup .c #d_loginemail input, #Fifacom2LoginPopup .c #d_loginpwd input {margin:0 0 4px 0;width:246px;font: 100% Arial,Sans-Serif;border:1px inset #f0f0f0;}
+#Fifacom2LoginPopup .c #d_loginemail input.toclean, #Fifacom2LoginPopup .c #d_loginpwd input.toclean {color:#787878;}
+#Fifacom2LoginPopup .c #d_loginrememberMe {position:static;float:left;top:auto;margin:5px 0 0;overflow:hidden;width:100%; text-align:left}
+#Fifacom2LoginPopup .c #d_loginrememberMe #c_rememberMe {width:auto;border:none;float:left;margin-top:0}
+#loginTheclub #theClubHPLogin #c_rememberMe { margin-top:0 !important}
+#Fifacom2LoginPopup .c #d_loginrememberMe label {display:block;}
+#Fifacom2LoginPopup #d_btnlogin {float:right;position:relative;height:25px;}
+#Fifacom2LoginPopup #d_btnlogin #btn_login {background:transparent url(http://img.fifa.com/imgml/comments/buttons.gif) no-repeat -86px 0px !important;color:#FCFEFB;font:11px Arial !important;border:none !important;width:85px !important;height:23px;font-weight:bold; margin-left:4px}
+#Fifacom2LoginPopup .f .btnLoginHeader {position:static;float:right;margin-right:14px;}
+#Fifacom2LoginPopup .f #d_loginrememberMe {position:static;padding:5px 0 2px 8px;}
+#Fifacom2LoginPopup .f #d_loginforgot {position:static;padding:0 10px;text-align:left;}
+#Fifacom2LoginPopup .register {padding:10px 10px 0 18px;text-align: left !important;}
+#Fifacom2LoginPopup .f #d_loginforgot a, #Fifacom2LoginPopup .register a {color:#000;font-size:10px;}
+.box.registerBox, #loginTheclub {min-height: 285px;}
+#Fifacom2LoginPopup .f {height:34px !important; background-image:none}
+#Fifacom2LoginPopup .f span {float: left;margin-left: 6px;margin-top: 10px;}
+#theClubHPLogin span {float: left;margin-right: 6px;margin-top: 4px;}
+#Fifacom2LoginPopup #d_btnlogin {float: none;position: relative;height: auto;}
+#Fifacom2LoginPopup .c #d_loginforgot {position: relative;}
+#Fifacom2LoginPopup .register { height:30px;text-align:center; background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -252px; font-size:12px}
+#Fifacom2LoginPopup .c #d_loginforgot a {font-size: 12px !important;}
+#d_loginemail {margin-top:14px !important}
+#d_btnlogin {text-align:left}
+#d_btnlogin #btn_login {margin-bottom: 10px;}
+#Fifacom2LoginPopup .c #d_loginrememberMe {padding-right:1px}
+#Fifacom2LoginPopup .register a {font-size:12px}
+.registerBox #c_registerFirstName, .registerBox #c_registerLastName, .registerBox #c_registerEmail,
+#f_login #cf_email, #f_login #cf_password{width:200px}
+.registerBox #registerBoxButtons input, #theClubHPLogin #d_buttons input {text-align:left;padding-top: 9px;padding-bottom: 24px;background:transparent url(http://img.fifa.com/imgml/theclub/login_btn.png) repeat-x 0 4px !important; -moz-border-radius: 3px; border-radius: 3px; color:#fff !important; text-align:center}
+#theClubHPLogin #d_buttons { text-align:left;}
+#d_forgotPassword {font-weight:bold;margin-bottom: 15px;}
+#fifacom2_club input.btnFB {width: auto !important;margin-left: 10px;margin-top: 3px;padding-left: 28px !important;}
+#d_loginrememberMe {padding-left:4px !important}
+#Fifacom2LoginPopup .c #d_loginforgot { padding-left:6px !important}
+#Fifacom2LoginPopup .c .shadow {margin-top:0px !important}
+#theClubHPLogin #d_rememberMe { margin-bottom:10px !important}
+#theClubHPLogin #d_rememberMe #l_rememberMe {line-height:11px !important; font-weight:bold;margin-right: 6px;}
+.mainForms label.required, #l_regCode {font-weight: bold;}
+.btnFB {background: url(http://img.fifa.com/imgml/theclub/facebook_btnlft.png) no-repeat scroll 0 0 transparent;height: 20px; padding-left:30px;font-family:Arial !important; font-size:11px !important; font-weight: bold !important; color:#ffffff; margin-bottom:0px !important; float:left; margin-right:0px; padding-top: 0px;cursor:pointer; width:auto; border:0px !important; -moz-border-radius: 3px; border-radius: 3px;}
+.btnTW {background: url(http://img.fifa.com/imgml/theclub/twitter_btnlft.png) no-repeat scroll 0 0 transparent;height: 20px; padding-left:30px;font-family:Arial !important; font-size:11px !important; font-weight: bold !important; color:#ffffff; margin-bottom:0px !important; float:left; margin-right:0px; padding-top: 0px;cursor:pointer; width:auto; border:0px !important; -moz-border-radius: 3px; border-radius: 3px;}
+.btnB {background: transparent url(http://img.fifa.com/imgml/theclub/btnB.png) no-repeat 0px -50px;font: bold 11px Arial !important;color: #fff !important;margin: 5px 5px 0 0; border-width:0px !important; width:152px !important; height:23px}
+#theClubHPLogin #d_buttons {clear: both;display: block;float: none;margin: 5px 0 5px 0;}
+#myFifacom2Avatar {float:left;margin:4px 10px 4px 0;}
+#myFifacom2Avatar img {background:trensparent url("http://img.fifa.com/imgml/theclub/avatar24x24.png") no-repeat scroll 0 0;}
+#myFifacom2Name {display:block;float:left;margin-top:8px;}
+#fifacom2_header #myActivities {float:right;position:relative;top:-4px;left:0;right:0;}
+#myProfile {float:right;}
+#myActivities a.popup {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat right -97px;display: block;height: 34px;margin-right: -4px;padding-right: 24px;color:#000;cursor:pointer;}
+#myActivities a.popup:hover {text-decoration:none;}
+#myActivities a.popup span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 3px;display: block;line-height: 22px;padding: 7px 0 5px 28px;}
+#myActivities a.popup span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -114px;display:inline;padding:0 18px 0 3px;line-height:23px;}
+#myActivities.open a.popup {background-position: right -305px;position:relative;z-index:1010;margin-right:8px;padding-right:12px;height:36px}
+#myActivities.open a.popup span {background-position: 0 -55px;}
+#myActivities.open a.popup span span {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -84px;}
+.ie6 #myActivities {width:150px !important;}
+#Fifacom2LoggedPopup {position:absolute;color:#000;width:273px; right:8px;top:33px;z-index:1000;}
+#Fifacom2LoggedPopup .h {height:10px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -203px;}
+#Fifacom2LoggedPopup .c {padding:0 10px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownbg.png) repeat-y; width:253px;}
+#Fifacom2LoggedPopup .c .loading {background:transparent url(http://img.fifa.com/imgml/animations/loadingSmall.gif) no-repeat scroll center center;height:300px;}
+#Fifacom2LoggedPopup .f {height:56px;background:transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) no-repeat 0 -233px;}
+#Fifacom2LoggedPopup #qlLogged {margin: 0 11px !important;width:auto !important;}
+#Fifacom2LoggedPopup #qlLogged li {border-right:1px solid;float:left;margin:0 4px 0 0 !important;padding:0 4px 0 0 !important;height:auto;}
+#Fifacom2LoggedPopup #qlLogged li.last {border: 0 none;}
+#Fifacom2LoggedPopup #qlLogged li a {font-weight:normal;color:#000;}
+#Fifacom2LoggedPopup #qlLogged li a.close {margin:0;}
+#fifacom2_header #Fifacom2LoggedPopup #qlLogged li a:hover {text-decoration:underline!important;}
+#myGamesAccordion {margin: 0; padding: 0; height: 295px;font-family:arial;font-size:11px;}
+#myGamesAccordion dt {padding:0;background: #fff url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) repeat-x scroll 0 bottom;}
+#myGamesAccordion dd {margin: 0 0 0 0; padding: 0;border:1px solid #bbb;border-top:0 none;border-bottom:0 none;background-color:#f3f3f3;}
+#myGamesAccordion dd {display:none;}
+#myGamesAccordion dt.bottom div {height:10px;border-top:1px solid #bbb;background: #fff url(http://img.fifa.com/imgml/fifacom2/clubdropdown.png) repeat-x scroll 0 -298px;}
+#myGamesAccordion dt a {background: transparent url(http://img.fifa.com/imgml/fifacom2/clubdropdownicons.png) no-repeat scroll right -110px;display:block;border:1px solid #bbb;border-bottom:0 none;padding:5px 14px 5px 5px;color:#000;}
+#myGamesAccordion dt a.current {background-position:right -80px;font-weight:bold;}
+#myGamesAccordion dd .serviceContent {padding:5px;border-top:1px solid #bbb;}
+#myGamesAccordion dd .serviceLogo {float:left;height:90px;width:90px;}
+#myGamesAccordion dd .serviceText {margin: 0 0 0 97px; text-align: left;}
+#myGamesAccordion dd .serviceLink {margin-left:114px}
+#myGamesAccordion dd .serviceLink a {color:#000;}
+#myGamesAccordion dd .playnowButton {background:transparent url(http://img.fifa.com/imgml/theclub/bgHeaderBtn.gif) repeat scroll 0 0;display:inline;float:left;margin:10px 32px 0 0;}
+#myGamesAccordion dd .playnowButton a {background-position:right top;color:#000000;font-family:arial;font-size:8pt !important;right:-18px;text-decoration:none;}
+#myGamesAccordion dd .playnowButton b, #myGamesAccordion dd .playnowButton strong {background-position:left bottom;bottom:-4px;left:-18px;}
+#myGamesAccordion dd .playnowButton * {background:url(http://img.fifa.com/imgml/theclub/bgHeaderBtn.gif) repeat scroll 0 0 transparent;display:block;position:relative;}
+#myGamesAccordion dd .playnowButton em {background-position:right bottom;font-style:normal;padding:0 22px 2px 4px;right:-18px;}
+#fifacom2_associationsDropdown {position:absolute;width:273px;height:300px;top:15px;left:-50px;z-index:1000;padding:6px;}
+#fifacom2_associationsDropdown ul {height:99%;overflow:auto;width:250px;margin:0 auto;border:1px solid #bbb;}
+#fifacom2_associationsDropdown ul li {width:200px; display:block;margin:0;padding:0 5px;border:0 none;line-height:18px;background:transparent none; text-align:left;}
+#fifacom2_associationsDropdown ul li a {display:inline;font-weight:normal;font-size:12px;position:static;margin:0;}
+#fifacom2_associationsDropdown .h {background:url("http://img.fifa.com/imgml/fifacom2/clubdropdown.png") no-repeat scroll 0 -203px transparent;height:14px;}
+#fifacom2_associationsDropdown .c {background:url("http://img.fifa.com/imgml/fifacom2/clubdropdownbg.png") repeat-y scroll 0 0 transparent;padding:0 10px;width:253px;height:300px;}
+#fifacom2_associationsDropdown .f {background:url("http://img.fifa.com/imgml/fifacom2/clubdropdown.png") no-repeat scroll 0 -265px transparent;height:25px;}
+#Fifacom2Hsearch {background: transparent url(http://img.fifa.com/imgml/fifacom2/searchbg.png) repeat-x scroll 0 0;float: right;height: 30px;padding-top:5px;width: 171px;margin-top:8px;}
+#Fifacom2Hsearch .qsForm {position:relative;width:100%;z-index:20000;}
+#Fifacom2Hsearch input#qsQuery {background:transparent url(http://img.fifa.com/imgml/fifacom2/google_logo.png) no-repeat scroll 5px 0;border:0 none;float:left;font-size:11px;height:15px;margin:3px 4px 3px 5px;padding:0;width:122px;}
+#Fifacom2Hsearch input#qsQuery.bgTransparent {background:transparent none;}
+#Fifacom2Hsearch input#qsSubmit {margin:3px 0 0 -3px;background:transparent none;cursor:pointer;width:18px;height:15px;border:0 none;float:left;position:relative;left:auto;top:0;}
+#Fifacom2Hsearch #searchDropdown {display:none;background: transparent url(http://img.fifa.com/imgml/fifacom2/searchbg.png) no-repeat scroll 0 -58px;width:171px;height:49px;position:absolute;top:13px;left:0;padding-top:11px;border:0 none;z-index:10000;}
+#Fifacom2Hsearch #searchDropdown ul {text-align:left !important;padding-left:2px !important;margin-top:8px;}
+#Fifacom2Hsearch #searchDropdown > div{color:#666 !important;font-size:11px !important;font-family:verdana;padding:0px !important;display:block !important;height:16px;letter-spacing:0px;}
+#Fifacom2Hsearch #searchDropdown > div span{margin-left:20px;cursor:pointer;text-decoration:none;}
+#Fifacom2Hsearch #searchDropdown > div.liSearchBg {background: transparent url(http://img.fifa.com/imgml/fifacom2/dropdownCK.gif) no-repeat scroll 9px 3px;}
+.ie6 #Fifacom2Hsearch #Fifacom2Hsearch input#qsSubmit {position:absolute;}
+#Fifacom2Hsearch #qsDropdown {margin:2px 0 0 6px;cursor:pointer;width:15px;height:15px;border:0 none;float:left;background:0 none;}
+#fifacom2_header.affiliate #Fifacom2Hsearch input#qsQuery {background:transparent none;}
+#worldleaguespredictorHeader .leftcorner {display:block;background: transparent url('http://img.fifa.com/imgml/lev2/fifacom2_headersponsors.jpg') no-repeat scroll 0px -208px; height:55px;overflow:hidden; position: absolute; top: 0; left: 0; width: 13px; height: 100px;}
+#worldleaguespredictorHeader .rightcorner {background: transparent url('http://img.fifa.com/imgml/sponsors/wlpredictor.jpg') no-repeat scroll right 0;}
+#worldleaguespredictorHeader .rightcorner {display:block;float:right;height:100%;overflow:hidden;width:300px;}
+#fwc_mainTitle #worldleaguespredictorHeader.fwc_lev2menu {background:transparent url('http://img.fifa.com/imgml/lev2/fifacom2_headersponsors.jpg') repeat-x scroll 0px -312px!important;}
+#fwc_mainTitle #worldleaguespredictorHeader .leftcornerMenu {background: transparent url('http://img.fifa.com/imgml/lev2/fifacom2_menusprite.png') no-repeat scroll 0 -127px!important;}
+#fwc_mainTitle #worldleaguespredictorHeader .rightcornerMenu {float:right;width:25px;background: transparent url('http://img.fifa.com/imgml/lev2/fifacom2_menusprite.png') no-repeat scroll 0 -169px!important;}
+#fwc_mainTitle #worldleaguespredictorHeader #lev2Menu {margin:0 !important;width:969px !important;background: transparent url('http://img.fifa.com/imgml/lev2/fifacom2_menusprite.png') repeat-x scroll 0px -210px!important;}
+#fwc_mainTitle #worldleaguespredictorHeader h1 a {color:#FFF;}
+#fwc_mainTitle #worldleaguespredictorHeader #lev2Menu li a {color:#FFF;border:none !important;}
+.ipad #fifacom2_logo, .ipad #fifacom2_langmenu {margin:0 5px}
+.ipad #fifacom2_lev01menu a.current {padding-bottom:4px;}
+.fifa-store {float:right;height:30px;margin:0 5px;line-height:30px}
+.fifa-store-icon {background:transparent url(http://img.fifa.com/imgml/fifacom2/chart_icon.png) no-repeat scroll 0 0;width:13px;height:13px;display:inline-block;vertical-align:text-top}
+.fifa-store a {color:#45709E;font-weight:bold;text-transform:uppercase;text-decoration:none}
+.fifa-store-text {padding:0 5px;font-family:Arial;font-size:12px;}
+.box.nt-box .bC,
+.box.nl-box .bC { padding:0 0 10px;}
+.nt-content {position:relative; padding:5px 0;}
+.nt-content .nt-newsTitle { font-weight:bold; margin:0 4px;}
+.nt-rl, .nt-date, .small { font-size:9px; margin:0 4px;}
+.nt-date, .small {color:#666666;}
+.nt-content .nt-text { margin:4px 0 3px 5px; clear:both; }
+.nt-content .nt-text a:hover{ text-decoration:none; }
+.nt-thumb { position:relative; }
+.nt-content .nt-thumb img{ display:block; vertical-align:top; }
+.nt-title {margin: 0 5px 3px 5px;font: 18px/18px Arial; color:#868686; display:block;}
+.nt-content .rr-ql { margin:5px;}
+.nt-sqr-80 {
+padding-left: 92px;
+min-height:84px; _height:84px;
+}
+.nt-lnd-160 {
+padding-left: 192px;
+min-height:102px; _height:102px;
+}
+.nt-lnd-320 {
+padding-left: 332px;
+min-height:182px; _height:182px;
+}
+.nt-lnd-480 {
+padding-left: 492px;
+min-height:282px; _height:282px;
+}
+.nt-sqr-80 .nt-thumb img{border: 1px solid #C7C8C9; padding: 1px;}
+.nt-sqr-80 .nt-thumb {
+position:absolute; top:5px; left:5px;
+width: 84px; height:84px;
+}
+.nt-lnd-160 .nt-thumb,
+.nt-lnd-160Top .nt-thumb {
+position:absolute; top:5px; left:5px;
+width:160px; height:90px;
+}
+.nt-lnd-160.thumbBg .nt-thumb,
+.nt-lnd-160Top.thumbBg .nt-thumb {
+height: 110px; width: 188px;
+background: url(http://img.fifa.com/imgml/cmnblocks/thumbBg/shadow-lnd-160.png) no-repeat scroll 0 bottom transparent;
+}
+.nt-lnd-160.thumbBg .nt-thumb img,
+.nt-lnd-160Top.thumbBg .nt-thumb img { margin: 0 14px ;}
+.nt-content.nt-lnd-160Top { padding-top:106px; }
+.nt-lnd-160Top .nt-thumb { top:0;}
+.nl-grid3 .nt-lnd-160Top .nt-thumb { left:11px;}
+.nl-grid4 .nt-lnd-160Top .nt-thumb { left:60px;}
+.nt-lnd-160Bot { }
+.zone-countries .nt-content.nt-lnd-160Top { padding-top:0; }
+.clubsList .nt-content.nt-lnd-160Top { padding-top:0; }
+.nt-content.nt-lnd-320Top { padding-top:186px; }
+.nt-lnd-320 .nt-thumb, .nt-lnd-320Top .nt-thumb { position:absolute; top:0; left:0;}
+.nt-lnd-320 .nt-thumb {top:10px; left:5px}
+.nt-lnd-320Bot { }
+.nt-content.nt-lnd-480Top { padding-top:276px; }
+.nt-lnd-480 .nt-thumb, .nt-lnd-480Top .nt-thumb { position:absolute; top:0; left:0;}
+.nt-lnd-480 .nt-thumb { width:480px; height:270px}
+.nt-lnd-480Bot { }
+.nt-content.nt-lnd-652{ padding:0; width:652px; height:auto;margin: 0 5px 40px 5px;}
+.nt-content.nt-lnd-652Top { padding-top:374px; }
+.nt-lnd-652Top .nt-thumb { position:absolute; top:0; left:0;}
+.nt-lnd-652Bot { }
+.nt-lnd-160 .flagbig, .nt-lnd-160Top .flagbig { float:left; }
+.nt-content .flagsp { float:left; margin:2px 4px 1px 0;}
+.nt-content .flagbig { margin-bottom:3px;}
+.nt-content .nt-thumb .flagsp { position:absolute; float:none; margin:0;}
+.nt-sqr-80 .nt-thumb .flagsp { bottom:4px; left:2px;}
+.nt-lnd-160Top .nt-thumb .flagsp,
+.nt-lnd-160 .nt-thumb .flagsp { bottom:2px; left:0px;}
+.nt-lnd-160Top.thumbBg .nt-thumb .flagsp,
+.nt-lnd-160.thumbBg .nt-thumb .flagsp { bottom:20px; left:14px;}
+.nl-comments {background-color:#f5f5f5;overflow:hidden;width:320px; padding-bottom:4px; min-height:70px; position:relative;}
+.uc-list {margin:8px 3px 5px 40px}
+.uc-nickname {color: #666666; font-family: arial; font-size: 11px; line-height: 12px;}
+.uc-nickname a {font-weight:bold;color:#666}
+.uc-avatar {float:left;margin-left:8px}
+.avatar-24 {background: url("http://img.fifa.com/imgml/theclub/avatar24x24.png") no-repeat scroll 0 0 transparent; height:24px; width:24px;border:1px solid #999; display:block;}
+.uc-body {font-size:11px}
+.nl-comments .rr-qlCont { position:absolute; bottom:0; right:0;}
+.nt-panel {font-family: arial; position: absolute; left: 0; bottom: 0; width: 100%; z-index: 100; color:#fff;}
+.ie7 .nt-lnd-652.bPnl .nt-panel,
+.ie7 .nt-lnd-652.fPnl .nt-panel{ width:652px;}
+.ie7 .nt-lnd-320.bPnl .nt-panel,
+.ie7 .nt-lnd-320.fPnl .nt-panel{ width:300px;}
+.nt-panel .nt-newsTitle,
+.nt-panel .nt-title,
+.nt-panel .nt-date,
+.nt-panel .small,
+.nt-panel .nt-text{ color:#fff; margin:0 10px;}
+.nt-panel a{ color:#fff;}
+.nt-panel .nt-newsTitle { font-size:20px; font-weight:normal;}
+.nt-panel .nt-text { margin-top:3px;}
+.nt-content .videoIcon,
+.nt-content .photoIcon { top: 0px; cursor: pointer; display: block; height: 51px; right:0; position: absolute; width: 73px;}
+.nt-content .videoIcon { background: url("/imgml/fifacom2/newsreader/videoicon.png") no-repeat scroll 0 0 transparent;}
+.nt-content .photoIcon { background: url("/imgml/fifacom2/newsreader/photoicon.png") no-repeat scroll 0 0 transparent;}
+.bPnl .vid-playIcon,
+.fPnl .vid-playIcon { display:none; visibility:hidden; }
+.bPnl .nt-panel {min-height: 70px; padding-top:4px; padding-bottom:8px;}
+.fPnl .nt-panel {height: 100%;}
+.fPnl .nt-panel { display:none;}
+.fPnl .nt-thumb:hover .nt-panel{ display: block; }
+.nt-overlay {
+background-color: #000000; height: 100%;width: 100%; position: absolute; top: 0; left: 0;
+opacity: 0.6; filter:alpha(opacity=60); z-index: -1;
+}
+.interActions { margin:2px 0;}
+.interActions li { margin:3px; display:inline-block; font-size:10px; font-weight:normal; color:#606060;}
+.ie7 .interActions li {*display:inline ;}
+.nt-share a{color:#606060; }
+.nt-share a:hover .icon-share { background-position:-2px -102px; }
+.nt-comments {color:#4A879C;}
+.nl-grid > li {
+float:left; margin:5px;
+width:320px ;
+}
+.box .nl-grid > li { width:310px ;}
+.nl-grid3 > li {
+float:left; margin:5px;
+width:210px ;
+}
+.nl-gridItem{ min-height:70px ;}
+.clubnewshp .nt-content {height: 118px;overflow: hidden;}
+.clubnewshp .nt-content .nt-text {height: 79px;overflow: hidden;}
+.nl-gridOut
+{
+min-height:170px ;
+height:170px ;
+}
+.nl-grid .nt-content.nt-lnd-320Bot { padding-bottom:186px; }
+.nl-grid li .nt-lnd-320Top .nt-thumb,
+.nl-grid li .nt-lnd-320Bot .nt-thumb{left:2px ;}
+.nl-listItem { border-top: 1px dotted #c7c7c7;}
+.nl-listItem.first {border:0;}
+.listOrd {border-top: 1px dotted #c7c7c7; margin-right:5px;}
+.listOrd.first {border:0;}
+.listOrd .num{ color:#1F5B9C; font:bold 18px/18px Arial; float:left; width:30px; text-align:center; padding-top:6px; }
+.listOrd .nt-content{ margin-left:30px;}
+.mh-230 .nl-listOut, .mh-230 .nl-gridItem { min-height:230px;}
+.mh-250 .nl-listOut, .mh-250 .nl-gridItem { min-height:250px;}
+.mh-270 .nl-listOut, .mh-270 .nl-gridItem { min-height:270px;}
+.mh-280 .nl-listOut, .mh-280 .nl-gridItem { min-height:280px;}
+.mh-300 .nl-listOut, .mh-300 .nl-gridItem { min-height:300px;}
+.mh-320 .nl-listOut, .mh-320 .nl-gridItem { min-height:320px;}
+.mh-340 .nl-listOut, .mh-340 .nl-gridItem { min-height:340px;}
+.mh-350 .nl-listOut, .mh-350 .nl-gridItem { min-height:350px;}
+.mh-180.vid-list .vid-lnd-160 { min-height:180px }
+.mh-128.box .nt-content {min-height:128px}
+.box.mh-180 .bC {min-height:180px}
+.box.mh-200 .bC {min-height:200px}
+.box.mh-240 .bC {min-height:240px}
+.nl-topStory .nl-listOut { float:left; width:320px; margin:0 5px;}
+.nl-topStory .nl-listItem {
+margin-left:330px;
+margin-right:5px ;
+}
+.nl-topStory .nl-listOut .cnt-title{ margin-left:0px;}
+.nl-topStory .nl-listOut .nt-newsTitle{ margin-top:10px; font-size:14px;}
+.nl-topStory .nl-listOut .nt-text{ margin-top:8px; line-height:18px;}
+.nl-topStory .nl-listItem.first .nt-content{ margin-top:-6px;}
+.nl-lnews .nl-listOut { width: 320px; float:left; margin: 5px;}
+.nl-lnews .nl-listOut:nth-child(odd) {clear:left;}
+.nl-lnews .nl-listItem {width:auto; margin: 5px;}
+.nl-lnews .nl-listItem .nt-content{margin-top: 10px;}
+.nl-lnews .nl-listItem.first { clear:both;}
+.nl-lnews .rr-qlCont {margin:0 0 5px 0}
+.nl-btt .nl-listOut {margin: 5px 5px 40px 4px; min-height: 312px;}
+.nl-btt .nl-listItem {width:auto; margin: 5px;}
+.nl-btt .nl-listItem .nt-content{margin-top: 10px;}
+.nl-allNews { border-top: 1px dotted #c7c7c7; margin:0 8px;}
+.nl-allNews.first {border:0;}
+.nl-allNews .nl-listOut {float:left; width:630px; margin-top:12px;}
+.nl-allNews .nl-listItem {
+padding:6px 0 6px 20px;
+margin-left:660px;
+}
+.nl-allNews .nl-listItem .nt-newsTitle{ text-indent:-20px }
+.li-height-auto li{ min-height : 1px !important; height: auto !important; }
+.ie7 .nl-wf .nl-listItem.first { margin-top:-100px;}
+.phgal-list li {position:relative;float:left;}
+.phgal-mask {display:block;position:absolute;top:0;left:0;}
+.phgal-list .phgal-caption {display:block;font-size:11px; font-weight:bold; margin:0 5px;position:absolute}
+.phgal-list .phgal-caption:hover { text-decoration: underline;}
+.phgal-list.phgal-lnd-160 li {height:160px;margin:0 0 0 30px}
+.phgal-list.phgal-lnd-160 li, .phgal-lnd-160 .phgal-mask {width:171px}
+.phgal-lnd-160 .phgal-mask {background:url('http://img.fifa.com/imgml/cmnblocks/thumbBg/phgal-border-lnd-160.png') no-repeat 0 0;height:102px}
+.phgal-list.phgal-lnd-160 .phgal-caption {top:107px; left:0}
+.phgal-list.phgal-lnd-160 li img {margin:8px 6px}
+.thumbList80 .phPulse{ float:left;height:82px;width:82px;padding:5px}
+.phPulse img {background:#FFF;border:1px solid #DDD;padding:3px;}
+.pho-list { padding:5px 0}
+.ph-list > ul > li {float:left;position:relative}
+.phgal-list.phgal-sqr-120 ul > li,
+.ph-list.ph-sqr-120 > ul > li,
+.vid-list.vid-sqr-120 > ul > li {height:170px;margin:0 7px}
+.phgal-list.phgal-sqr-120 > ul > li,
+.phgal-list.phgal-sqr-120 .phgal-mask,
+.ph-list.ph-sqr-120 > ul > li,
+.vid-list.vid-sqr-120 > ul > li {width:139px}
+.phgal-list.phgal-sqr-120 .phgal-mask {background:url("http://img.fifa.com/imgml/cmnblocks/thumbBg/phgal-border-sqr-120.png") no-repeat 0 0;height:142px}
+.phgal-list.phgal-sqr-120 li img,
+.ph-list.ph-sqr-120 li img,
+.vid-list.vid-sqr-120 li img {margin:10px;width:120px;height:120px}
+.rate {display:block;position:absolute;width:20px;height:20px;bottom:42px;left:11px;background-color:#fff;text-align:center;color:#1F5B9C;font:bold 12px/20px Verdana;}
+.ph-list .rate, .vid-list .rate {left:10px;bottom:40px}
+.ph-list.ph-sqr-120 li img, .vid-list.vid-sqr-120 li img {border: 1px solid #C0C0C0;padding: 2px;margin:7px}
+.vid-mostViewed.vid-sqr-120 .vid-playIcon {bottom:30px}
+.nl-lpho li.nl-listItem { border:0px; width:320px; float:left; padding:5px;}
+.vid-list {font-size:10px; padding:5px 0}
+.box .vid-list {font-size:10px; padding:0}
+.vid-list > ul > li {float:left;position:relative}
+.vid-summary {margin:0 0 10px 0}
+.vid-list h3 {text-align:center;font-weight:bold;margin:7px 0 0 0}
+.vid-thumb {position:relative}
+.vid-sqr-80 {margin: 0 0 10px 3px;width: 103px;height:135px}
+.vid-sqr-80 .vid-thumb {background: url("http://img.fifa.com/imgml/fifacom2/videolist_bg_small.jpg") no-repeat scroll 0 0 transparent; height: 92px;}
+.vid-sqr-80 img {margin: 6px 12px;}
+li .vid-sqr-180 {width: 208px; margin: 0 0 10px 4px;}
+.vid-sqr-180 .vid-thumb {background: url("http://img.fifa.com/imgml/fifacom2/videolist_bg.jpg") no-repeat scroll 0 0 transparent; height: 202px;}
+.vid-sqr-180 img {margin: 11px 14px;}
+li .vid-lnd-160 {margin: 0 0 5px 19px; width:188px;}
+.vid-lnd-160 .vid-thumb {height:121px;}
+.vid-lnd-160.thumbBg .vid-thumb {background:url('http://img.fifa.com/imgml/cmnblocks/thumbBg/shadow-lnd-160.png') no-repeat 0 bottom;}
+.vid-lnd-160 img {margin: 11px 14px;}
+.vid-list.rr-tLine li .vid-lnd-160 {min-height:145px}
+.vid-list li .vid-lnd-160 {min-height:175px}
+.vid-lnd-85 {margin: 0 0 10px 3px;width:101px;}
+.vid-lnd-85 .vid-thumb {height:62px;}
+.vid-lnd-85.thumbBg .vid-thumb {background:url('http://img.fifa.com/imgml/cmnblocks/thumbBg/shadow-lnd-85.png') no-repeat 0 bottom;}
+.vid-lnd-85 img {margin: 6px 8px;}
+li .vid-lnd-320 {margin: 0 0 10px 9px; width:320px;}
+.vid-lnd-320 .vid-thumb {height:210px}
+.vid-lnd-320 img {margin:10px 0}
+.vid-playIcon {background: url("http://img.fifa.com/imgml/fifacom2/play.png") no-repeat scroll center 0 transparent;
+bottom: -5px; height: 32px; left: 0; position: absolute; width: 100%;}
+.nt-thumb .vid-playIcon {bottom:7px}
+.vid-list .vid-sqr-180 .vid-playIcon,
+.vid-list .vid-lnd-320 .vid-playIcon {background: url("http://img.fifa.com/imgml/tournament/play_big.png") no-repeat scroll 0 0 transparent; height: 50px; left: 64px; top: 172px; width: 80px;}
+.vid-list .vid-lnd-160 .vid-playIcon {bottom:7px}
+.vid-list .vid-lnd-320 .vid-playIcon {top:auto;left:120px}
+.vid-teaser .vid-sqr-180 {padding: 0 5px}
+.vid-list.vid-teaser li {float: none; margin: 0; padding: 0; width: 100%;}
+.vid-list.vid-teaser .vid-sqr-180 {background: url("http://img.fifa.com/imgml/tournament/videobox_bg.jpg") no-repeat scroll center -15px transparent; margin: -5px 0 0 -5px; min-height: 250px; text-align: center; }
+.vid-list.vid-teaser .vid-sqr-180 img {border: 1px solid #CCCCCC;}
+.vid-list.vid-teaser img {margin-top: 16px; padding: 0;}
+.grid_4 .vid-grid-sqr-80 li{ margin:0 22px;}
+.vid-hl {text-align:center; min-height:40px}
+.vid-sqr-180 .vid-hl {margin: 27px 63px 10px;}
+.vid-sqr-80 .vid-hl {margin: 9px 11px;}
+.vid-hl-res {width:32px}
+.vid-list .vid-hl img {border: 1px solid #CCCCCC;margin:0}
+.vid-hl-hT, .vid-hl-res, .vid-hl-aT, .vid-hl-aT {float:left}
+.vid-list.vid-teaser .vid-sqr-180 .vid-playIcon {left:119px}
+.vid-list li .vid-sqr-180 h3, .vid-list.vid-teaser h3 {margin-top:20px}
+.vid-teaser .vid-sqr-180 .vid-thumb {background:none;height:auto;position:static}
+.vid-list.vid-oneForRow li .vid-lnd-160 { width:661px; margin: 0px 0px 0px 0px;}
+.vid-list.vid-oneForRow li .vid-lnd-160 .vid-thumb { float:left; width:185px;}
+.vid-list.vid-oneForRow h3 { text-align:left;}
+.mh-250 .vid-sqr-180, .mh-250 .vid-lnd-320 { min-height:250px;}
+.mh-260 .vid-sqr-180, .mh-260 .vid-lnd-320 { min-height:260px;}
+.mh-270 .vid-sqr-180, .mh-270 .vid-lnd-320 { min-height:270px;}
+.mh-280 .vid-sqr-180, .mh-280 .vid-lnd-320 { min-height:280px;}
+.yt.vid-list {padding:1px 0;}
+.yt .vid-thumb {height: 250px;}
+.yt .vid-lnd-320 {margin:0 0 0px 3px;}
+.yt .vid-lnd-320 img {margin:2px 0 15px;}
+.yt.vid-list .vid-lnd-320 .vid-playIcon {top:165px;}
+.yt.vid-list h3 {margin: 20px 0 0;}
+.twitterWidget h3 a {color: #183360;display:block;}
+.twitterWidget h3 a:hover {color: #183360; border-bottom:solid 4px #1F5B9C; height:27px;}
+.jcarousel-prev, .jcarousel-next{height: 20px;margin: 4px;position: absolute;width: 20px;top:88px; cursor:pointer;}
+.jcarousel-prev { background: url('http://img.fifa.com/imgml/icons/prev_fwc2010.png') no-repeat left -17px transparent;}
+.jcarousel-next { background: url('http://img.fifa.com/imgml/icons/next_fwc2010.png') no-repeat right -17px transparent;}
+.jcarousel-prev:hover { background-position: left 1px;}
+.jcarousel-next:hover { background-position: right 1px;}
+.jcarousel-prev.jcarousel-prev-disabled{ background:none;}
+.jcarousel-next.jcarousel-next-disabled{ background:none;}
+.jcarousel-prev { left:0;}
+.jcarousel-next { right:0;}
+jcarousel-container {position:relative;}
+.jcarousel-clip {z-index:2;padding:0;margin:0;overflow:hidden;position:relative;}
+.jcarousel-list {z-index:1;overflow:hidden;position:relative;top:0;left:0;margin:0;padding:0;}
+.jcarousel-list li,
+.jcarousel-item {float:left;list-style:none;}
+.jcarousel-next {z-index:3;display:none;}
+.jcarousel-prev {z-index:3;display:none;}
+.jcarousel-skin-fifa
+.jcarousel-skin-fifa .jcarousel-item {width:130px;text-align:center;}
+.jcarousel-skin-fifa .jcarousel-item:hover {}
+.jcarousel-skin-fifa .jcarousel-item-horizontal {margin-right:7px;}
+.jcarousel-skin-fifa .jcarousel-item-placeholder {}
+.jcarousel-skin-fifa .jcarousel-next-horizontal {position:absolute;top:24px;right:-5px;width:20px;height:35px;cursor:pointer;background:transparent url(http://img.fifa.com/imgml/icons/jCarouselArrows.png?0) no-repeat 0 0;}
+.jcarousel-skin-fifa .jcarousel-prev-horizontal {position:absolute;top:24px;left:-5px;width:20px;height:35px;cursor:pointer;background:transparent url(http://img.fifa.com/imgml/icons/jCarouselArrows.png?0) no-repeat 0 -35px;}
+.jcarousel-skin-fifa .jcarousel-next-disabled-horizontal {cursor:default;background-position: 0 -70px;}
+.jcarousel-skin-fifa .jcarousel-prev-disabled-horizontal {cursor:default;background-position: 0 -105px;}
+.jcarousel-skin-fifa .jcarousel-item img {border: 1px solid #CCCCCC;padding:1px}
+.jcarousel-skin-fifaHP .jcarousel-clip {margin: 0 34px;}
+.jcarousel-skin-fifaHP .jcarousel-prev, .jcarousel-skin-fifaHP .jcarousel-next{top:14px;}
+.jcarousel-skin-fifaHP .jcarousel-clip li{ width:94px;}
+.jcarousel-skin-fifaHP .jcarousel-next {width:29px;height:35px;cursor:pointer;background:transparent url(http://img.fifa.com/imgml/worldcup/lngc/latestVids/arrows.png) no-repeat -9px -1px;}
+.jcarousel-skin-fifaHP .jcarousel-prev {width:29px;height:35px;cursor:pointer;background:transparent url(http://img.fifa.com/imgml/worldcup/lngc/latestVids/arrows.png) no-repeat -12px -35px;}
+.jcarousel-skin-fifaHP .jcarousel-next-disabled-horizontal {cursor:default;background-position: -9px -69px;}
+.jcarousel-skin-fifaHP .jcarousel-prev-disabled-horizontal {cursor:default;background-position: -12px -103px;}
+.cnt-box .vid-list li .vid-lnd-320,
+.cnt-box .vid-list li .vid-lnd-320 img {margin:0}
+.cnt-box .vid-list li .vid-lnd-320 .vid-thumb {height:200px}
+.cnt-box .cnt-body .vid-list.vid-teaser img { margin-top: 0px;}
+.cnt-box .rr-qlCont {margin:25px 5px 0 5px}
+.vid-lnd-160 .shadow,
+.ph-lnd-160 .shadow,
+.phgal-lnd-160 .shadow {position:relative;height:110px;width:188px;}
+.vid-lnd-160 .shadow,
+.ph-lnd-160 .shadow {background:url('http://img.fifa.com/imgml/cmnblocks/thumbBg/shadow-lnd-160.png') no-repeat 0 bottom;}
+.vid-lnd-160 .jcarousel-container,
+.ph-lnd-160 .jcarousel-container {
+margin:17px 0 0 0;
+}
+.phgal-lnd-160 .jcarousel-container {margin-top:10px}
+.jcarousel-skin-fifaHP .jcarousel-prev,
+.jcarousel-skin-fifaHP .jcarousel-next {top:30px}
+.jcarousel-skin-fifaHP li {position:relative}
+.jcarousel-skin-fifaHP.vid-lnd-160 li,
+.jcarousel-skin-fifaHP.ph-lnd-160 li,
+.jcarousel-skin-fifaHP.phgal-lnd-160 li {width:188px;padding:0 3px 0 0}
+.jcarousel-skin-fifaHP .shadow img {margin:0 14px;position:absolute}
+.jcarousel-skin-fifaHP.phgal-lnd-160 img {top:8px}
+.jcarousel-skin-fifaHP.phgal-lnd-160 .phgal-mask {left:8px}
+.jcarousel-skin-fifaHP .vid-playIcon {bottom:5px;left:auto}
+.jcarousel-skin-fifaHP h3 {font-size:11px;font-weight:bold;padding:0 15px}
+.jcarousel-skin-fifaHP.phgal-lnd-160 .thumbFallback,
+.jcarousel-skin-fifaHP.ph-lnd-160 .thumbFallback {left:14px}
+.ph-list.ph-sqr-120 .interActions,
+.vid-list.vid-sqr-120 .interActions { margin:-4px 0 0 6px;}
+.ph-list.ph-sqr-120 .interActions li,
+.vid-list.vid-sqr-120 .interActions li { display:block; margin:0 0 2px 0;}
+.nt-lnd-160 .thumbFallback,
+.nt-lnd-160Top .thumbFallback,
+.nt-lnd-320Top .thumbFallback,
+.nt-lnd-320 .thumbFallback,
+.nt-lnd-320Top .thumbFallback,
+.vid-lnd-160 .thumbFallback,
+.vid-lnd-320 .thumbFallback,
+.phgal-lnd-160 .thumbFallback,
+.ph-lnd-160 .thumbFallback
+{ position:absolute; top:0; margin:0!important; left:0}
+.nt-lnd-160 .thumbFallback,
+.nt-lnd-160Top .thumbFallback {clip:rect(0px 160px 90px 0px); left:14px;}
+.nt-lnd-320 .thumbFallback,
+.nt-lnd-320Top .thumbFallback,
+.nt-lnd-320Bot .thumbFallback {
+clip:rect(0px 320px 180px 0px);
+width:332px;
+height:auto;}
+.nt-lnd-320 .nt-thumb,
+.nt-lnd-320Top .nt-thumb {
+width:320px; height:180px; }
+.vid-lnd-160 .thumbFallback {clip: rect(0px 160px 90px 0px);left: 14px;top: 11px;}
+.vid-lnd-320 .thumbFallback {clip: rect(0px 320px 180px 0px);height: auto;width: 320px; top:10px;}
+.vid-lnd-320 .vid-thumb { overflow:hidden;}
+.vid-lnd-320 .thumbFallback {width: 320px;}
+.cnt-box .vid-lnd-320 .thumbFallback {top:auto}
+.jcarousel-skin-fifaHP.vid-lnd-160 .thumbFallback,
+.jcarousel-skin-fifaHP.ph-lnd-160 .thumbFallback {top:0}
+.jcarousel-skin-fifaHP.ph-lnd-160 .thumbFallback {left:14px}
+.phgal-lnd-160 .thumbFallback,
+.ph-lnd-160 .thumbFallback {clip: rect(0px 160px 90px 0px);left: 6px;top:8px;}
+.nt-lnd-85 .thumbFallback,
+.vid-lnd-85 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/7.jpg') no-repeat top left}
+.nt-lnd-160 .thumbFallback,
+.nt-lnd-160Top .thumbFallback,
+.vid-lnd-160 .thumbFallback,
+.phgal-lnd-160 .thumbFallback,
+.phgal-lnd-160 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/8.jpg') no-repeat top left}
+.nt-lnd-320 .thumbFallback,
+.nt-lnd-320Top .thumbFallback,
+.vid-lnd-320 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/9.jpg') no-repeat top left}
+.vid-sqr-50 .thumbFallback,
+.nt-sqr-50 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/6.jpg') no-repeat center center}
+.vid-sqr-80 .thumbFallback,
+.nt-sqr-80 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/5.jpg') no-repeat center center}
+.vid-sqr-150 .thumbFallback,
+.nt-sqr-150 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/4.jpg') no-repeat center center}
+.vid-sqr-180 .thumbFallback,
+.nt-sqr-180 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/3.jpg') no-repeat center center}
+.vid-sqr-300 .thumbFallback,
+.nt-sqr-300 .thumbFallback {background:transparent url('http://img.fifa.com/imgml/cmnblocks/thumbBg/2.jpg') no-repeat center center}
+.grid_4 .sharingToolsBox.box {background:url(http://img.fifa.com/imgml/boxes/FIFABoxesBody_grid4.gif) repeat-y scroll 0 0 transparent; height:94px;}
+.grid_4 .sharingToolsBox.box .bC { overflow:visible; z-index:100000;}
+#socialSharingToolsBox {width:309px;padding:4px 0 0 4px;}
+#socialSharingToolsBox > div {float:left;background:transparent url(http://img.fifa.com/imgml/worldcup/verticalSeparator.jpg) no-repeat scroll right 0;text-align:center;width:74px;height:80px;padding-right:3px;}
+#socialSharingToolsBox > div.FBLikeButton {text-align:left;}
+#socialSharingToolsBox > div.FBLikeButton iframe{ margin-left:15px;}
+#googleBuzz {margin-top:-4px;background-position:right 4px !important;}
+#socialSharingToolsBox > #shareFwc {background:none !important;position:relative;}
+#shareFwcLinks {background:none;clear:both;display:none;height:50px;margin-top:5px;width:100%;}
+#shareFwcText {color:#FFFFFF;font-family:verdana;font-size:10px;left:22px;position:absolute;top:46px;}
+.ie7 .grid_4 .sharingToolsBox.box{ z-index:20000;}
+.ie7 .grid_4 .sharingToolsBox.box .bC{ position:absolute; top:0; left:0; }
+.ie7 .fb_edge_comment_widget.fb_iframe_widget iframe{ height:275px !important;}
+#sharingClose {float:right;width:22px;height:22px;line-height:100px;overflow:hidden;background:url("http://img.fifa.com/imgml/icons/pop_close.gif") no-repeat scroll 0 0 transparent;}
+#gigyaContainer {width: 520px;height: 320px;position: absolute;top: 50%;left: 50%;margin-left: -270px; margin-top:-160px; z-index: 2000000;}
+#gigyaClose {width: 40px;height: 40px;position: absolute;right: 0;top: 0px;background:red;cursor:pointer;background:url(http://img.fifa.com/imgml/icons/close.png) no-repeat center center transparent;}
+.ie #gigyaContent td{ height:auto;}
+#lbOverlay {background-color:#000;opacity:0.5;filter: alpha(opacity=50);height:100%;position:absolute;left:0;top:0;text-align:center;width:100%;z-index:1000000;}
+#sharingTools {color:#666;position:absolute;top:250px;left:50%;width:810px;margin-left:-405px;z-index:2000000;}
+#sharingTools .bH {height:35px;background:url(/imgml/fifacom2/photogallerypopup.png) no-repeat scroll 10px -38px transparent;}
+#sharingTools .bC {padding: 40px 44px 58px;height:100%;background:url(/imgml/fifacom2/photogallerypopup.png) repeat-y scroll -859px 0 transparent;}
+#sharingTools .bF {height:30px;background:url(/imgml/fifacom2/photogallerypopup.png) no-repeat scroll 10px -70px transparent;}
+#sharingTools .closeIcon {width:40px;height:35px;margin:0;float:right;cursor:pointer;}
+#sharingTools .stTitle {width: 756px;height: 50px;position: absolute;left: 28px;top: 25px;background: url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 0 transparent;}
+#sharingTools .stTitle span {color: #13518A;font-size: 15px;font-weight: bold;display:block;padding: 12px 16px;}
+#sharingTools .stEmailForm {display:none;}
+#sharingTools label {display:block;padding: 6px 0 2px;}
+#sharingTools .group {float: left;width: 352px;padding-bottom: 6px;}
+#stLblEmailTo {}
+#stEmailTo {width: 718px;}
+#stLblEmailFrom {}
+#stEmailFrom {width: 330px;}
+#stLblEmailName {}
+#stEmailName {width: 366px;}
+#stLblEmailMessage {}
+#stEmailMessage {width: 718px;height:80px;}
+#sharingTools .stCaptcha {margin-bottom:5px;}
+#sharingTools .stCaptcha a {float:left;}
+#stCaptchaImg {border:1px solid #fff;margin:3px 5px 0 0;}
+#stCaptcha {font-size:40px;height:46px;width:200px;margin:3px 5px 0 5px;}
+#sharingTools .stButtons {text-align: center;width:300px;float:right;margin-top:-60px;}
+#stEmailSend {margin: 4px 0;}
+#stEmailCancel {color:#666;display:block;clear:both;margin-top:5px;}
+#sharingTools .stError {color:#f00;}
+#sharingTools .validateError {border: 1px solid red;}
+#sharingTools #stPreview {min-height: 90px;clear: both;}
+#sharingTools #stPreview img {background:#fff;border: 1px solid #CCCCCC;float: left;margin: 0 10px 10px 0;padding: 1px;max-height: 90px;}
+#sharingTools #stPreview .stPreviewTitle {font-size: 12px;font-weight: bold;margin: 0 0 0 94px;}
+#sharingTools #stPreview .stPreviewDescription {font-size: 12px;margin: 0 0 0 94px;}
+#sharingTools #stPreview.noImage {min-height: 0;}
+#sharingTools #stPreview.noImage img {display:none;}
+#sharingTools #stPreview.noImage .stPreviewTitle, #sharingTools #stPreview.noImage .stPreviewDescription {margin:0;}
+#sharingTools .stEmailConfirm {padding:10px;margin-bottom: 32px;}
+.stEmailAgain {text-align: center;margin:10px;}
+#sharingTools .stTools {width: 756px;height: 67px;position: absolute;left: 28px;bottom: 15px;background: url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 -50px transparent;}
+#sharingTools .stTools ul {margin: 0 16px;list-style: none;}
+#sharingTools .stTools li {float:left;padding: 17px 12px 12px;background:url("/imgml/fifacom2/sharingtoolspopup.png") no-repeat scroll 55px -126px transparent;}
+#sharingTools .stTools li.last {background:transparent none;}
+#sharingTools .stTools li.selected {background:#f8f8f8 none;border-color:#CCCCCC;border-style: none solid solid;border-width: 0 1px 1px;padding: 17px 11px 12px;}
+#sharingTools .stTools li a {display:block;width:32px;height:32px;background:url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 0 transparent;cursor:pointer;outline:none;}
+#sharingTools .stTools li a#stEmail {background-position: -20px -140px;}
+#sharingTools .stTools li a#stFacebook {background-position: -60px -140px;}
+#sharingTools .stTools li a#stTwitter {background-position: -100px -140px;}
+#sharingTools .stTools li a#stLinkedin {background-position: -180px -140px;}
+#sharingTools .stTools li a#stDigg {background-position: -220px -140px;}
+#sharingTools .stTools li a#stStumbleUpon {background-position: -260px -140px;}
+#sharingTools .stTools li a#stDelicious {background-position: -300px -140px;}
+#sharingTools .stTools li a#stTumblr {background-position: -340px -140px;}
+#sharingTools .stTools li a#stReddit {background-position: -380px -140px;}
+#sharingTools .stTools li a#stPinterest {background-position: -420px -140px;}
+#stGooglePlus {width:32px;height:32px;margin:5px 0;text-align:center;}
+#lbOverlay {background-color:#000;opacity:0.5;filter: alpha(opacity=50);height:100%;position:absolute;left:0;top:0;text-align:center;width:100%;z-index:1000000;}
+#sharingTools {color:#666;position:absolute;top:250px;left:50%;width:810px;margin-left:-405px;z-index:2000000;}
+#sharingTools .bH {height:35px;background:url(/imgml/fifacom2/photogallerypopup.png) no-repeat scroll 10px -38px transparent;}
+#sharingTools.iframe .bC {padding: 40px 28px 49px;height:100%;background:url(/imgml/fifacom2/photogallerypopup.png) repeat-y scroll -859px 0 transparent;}
+#sharingTools iframe {width: 756px;height:1px;overflow:hidden;border:0 none;}
+#sharingTools.iframe .bF {height:20px;background:url(/imgml/fifacom2/photogallerypopup.png) no-repeat scroll 10px -80px transparent;}
+#sharingTools .closeIcon {width:40px;height:35px;margin:0;float:right;cursor:pointer;}
+.sharingTools {color:#666;background-color:#f8f8f8;padding: 0 16px 10px;}
+.sharingTools .stTitle {height: 50px;background: url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 0 transparent;}
+.sharingTools .stTitle span {color: #13518A;font-size: 15px;font-weight: bold;display:block;padding: 12px 16px;}
+.sharingTools .stEmailForm {display:none;}
+.sharingTools label {display:block;padding: 6px 0 2px;}
+.sharingTools .group {float: left;width: 352px;padding-bottom: 6px;}
+#stLblEmailTo {}
+#stEmailTo {width: 718px;}
+#stLblEmailFrom {}
+#stEmailFrom {width: 330px;}
+#stLblEmailName {}
+#stEmailName {width: 366px;}
+#stLblEmailMessage {}
+#stEmailMessage {width: 718px;height:80px;}
+.sharingTools .stCaptcha {margin-bottom:5px;}
+.sharingTools .stCaptcha a {float:left;}
+#stCaptchaImg {border:1px solid #fff;margin:3px 5px 0 0;}
+#stCaptcha {font-size:40px;height:46px;width:200px;margin:3px 5px 0 5px;}
+.sharingTools .stButtons {text-align: center;width:300px;float:right;margin-top:-60px;}
+#stEmailSend {margin: 4px 0;}
+#stEmailCancel {color:#666;display:block;clear:both;margin-top:5px;}
+.sharingTools .stError {color:#f00;}
+.sharingTools .validateError {border: 1px solid red;}
+.sharingTools #stPreview {min-height: 90px;clear: both;}
+.sharingTools #stPreview img {background:#fff;border: 1px solid #CCCCCC;float: left;margin: 0 10px 10px 0;padding: 1px;}
+.sharingTools #stPreview .stPreviewTitle {font-size: 12px;font-weight: bold;margin: 0 0 0 94px;}
+.sharingTools #stPreview .stPreviewDescription {font-size: 12px;margin: 0 0 0 94px;}
+.sharingTools #stPreview.noImage {min-height: 0;}
+.sharingTools #stPreview.noImage img {display:none;}
+.sharingTools #stPreview.noImage .stPreviewTitle, .sharingTools #stPreview.noImage .stPreviewDescription {margin:0;}
+.sharingTools .stEmailConfirm {padding:10px;margin-bottom: 32px;}
+.stEmailAgain {text-align: center;margin:10px;}
+.sharingTools .stTools {height: 67px;background: url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 -50px transparent;}
+.sharingTools .stTools ul {margin: 0 16px;list-style: none;}
+.sharingTools .stTools li {float:left;padding: 17px 12px 12px;background:url("/imgml/fifacom2/sharingtoolspopup.png") no-repeat scroll 55px -126px transparent;}
+.sharingTools .stTools li.last {background:transparent none;}
+.sharingTools .stTools li.selected {background:#f8f8f8 none;border-color:#CCCCCC;border-style: none solid solid;border-width: 0 1px 1px;}
+.sharingTools .stTools li a {display:block;width:32px;height:32px;background:url(/imgml/fifacom2/sharingtoolspopup.png) no-repeat scroll 0 0 transparent;cursor:pointer;outline:none;}
+.sharingTools .stTools li a#stEmail {background-position: -20px -140px;}
+.sharingTools .stTools li a#stFacebook {background-position: -60px -140px;}
+.sharingTools .stTools li a#stTwitter {background-position: -100px -140px;}
+.sharingTools .stTools li a#stLinkedin {background-position: -180px -140px;}
+.sharingTools .stTools li a#stDigg {background-position: -220px -140px;}
+.sharingTools .stTools li a#stStumbleUpon {background-position: -260px -140px;}
+.sharingTools .stTools li a#stDelicious {background-position: -300px -140px;}
+.sharingTools .stTools li a#stTumblr {background-position: -340px -140px;}
+.sharingTools .stTools li a#stReddit {background-position: -380px -140px;}
+.sharingTools .stTools li a#stPinterest {background-position: -420px -140px;}
+#stGooglePlus {width:32px;height:32px;margin:5px 0;text-align:center;}
+.title.twTitle h1 {width:100%;text-align:center;}
+.twitterWidget.hub h3 a {color: #00aced !important;}
+#fwc_mainTitle { margin-bottom:10px; position: relative; }
+#fwc_mainTitle .content_header.lev1 { width: 100%;}
+.title-wrap {background-color: #326195; }
+#fwc_mainTitle .content_header h1,
+#fwc_mainTitle .content_header h2 {color: #FFFFFF; font:bold 28px/54px Arial;margin:0 auto;width:1002px;}
+#fwc_mainTitle .content_header .hlink { color: #FFFFFF; margin-left:16px }
+.hlink:hover{ text-decoration:none}
+.nav-wrap {
+position:relative;width:100%; z-index:1000; padding-bottom:5px;
+}
+.nav-menu > li { float:left}
+.nav-menu > li > a:hover { text-decoration:none; }
+.nav-aside { position:relative; width:1002px; margin:0 auto}
+.nav-aside > ul { position:absolute; right:0; top:-42px}
+.nav-aside > ul > li { display: inline-block; height: 30px; margin-left: 10px; padding-right: 15px;}
+.nav-aside > ul > li a {color: #FFFFFF; display: table-cell; height: 30px; padding-left: 30px; vertical-align: middle;}
+.wmcmenu-share, .wmcmenu-tzc { border-right:1px solid #24446e}
+#wmcShare,
+#tzcLocal,
+#tzcClient,
+#wmcCalendar {background:transparent url(http://img.fifa.com/imgml/wmc/icons-header.png) no-repeat left -14px;}
+#tzcClient,#tzcLocal {background-position: left -65px}
+#wmcCalendar {background-position: left -118px}
+.nav-menu { width:1002px; background-color:#234065; margin:0 auto; height:34px;
+box-shadow:0px 2px 2px 0 rgba(0, 0, 0, 0.4);}
+.nav-menu > li { height:38px}
+.nav-menu > li > a {
+color: #FFFFFF; display: table-cell; padding: 0 16px;
+font: bold 13px/34px Arial;text-align: center; vertical-align:middle}
+.nav-menu > li.is-active {border-bottom:4px solid #f7c84a; height:33px}
+.nav-menu > li.is-active:hover{border-bottom:0; height:38px}
+.nav-menu > li:hover,
+.nav-menu > li.is-open { background-color:#DCDCDC; border-bottom:0; height:38px}
+.nav-menu > li:hover > a,
+.nav-menu > li.is-open > a { color: #234065; border:0 }
+.nav-menu > li.nav-clubs,
+.nav-menu > li.nav-teams{ float:right}
+.nav-menu > li.nav-teams > a { border-right: 0;}
+.wmc-ddMenu { position:absolute; top:0; left:0; padding-top:45px; z-index:-1 ;
+width:100%; background-color:#DCDCDC;box-shadow:-1px 3px 4px 0 rgba(0, 0, 0, 0.3);}
+.ie8 .wmc-ddMenu{ border-bottom:1px solid #BBB}
+.wmc-regions { width:1002px; margin:0 auto;}
+.region { display:block; text-align:center;}
+.region:hover { background-color:#EBEBEB;text-decoration:none; }
+.regionItem.is-active .region { background-color:#EBEBEB; }
+.regionText {display: table-cell; height: 36px; text-align: center; vertical-align: middle; padding:0 20px; font-weight:bold}
+.regionItem { float:left;}
+.regionContent {
+position:absolute; top:0; left:0;z-index:-1;width:100%;
+background-color: #EBEBEB; margin-top: 80px; padding-top: 20px;
+display:none ;
+box-shadow:-1px 3px 4px 0 rgba(0, 0, 0, 0.3);
+}
+.regionItem.is-active .regionContent { display:block }
+.regionContentWrap { width:996px; margin:0 auto}
+.clubCompList{
+margin-bottom:20px;
+display:none ;
+}
+.is-active .clubCompList { display:block }
+.clubCompList > li{ float:left;}
+.clubCompList > li > a{ display: table-cell; vertical-align:middle; height:32px; width:169px; padding:0 10px 0 20px; }
+.clubCompList > li > a:hover{ background-color:#DCDCDC}
+.clubCompDomestic { float:left; width:796px}
+.clubCompInter { float:right; width:199px}
+.clubCompDomestic h3,
+.clubCompInter h3{ text-transform:uppercase; font:bold 14px/14px Arial; padding:20px 0 20px 20px}
+.clubCompInter ul { margin-bottom:60px}
+.wmc-intTrn { width: 100%;}
+.intTrnText { display: block; font: bold 16px/18px Arial; text-transform: uppercase; width:900px; margin:0 auto; padding:6px 0}
+.intTrnItem { margin-top:16px}
+.intTrnContent { position:relative}
+.intTrnContentBG {
+position:absolute; top:0; left:0;z-index:-1;width:100%; height:100%;
+background-color: #EBEBEB;
+}
+.intTrnContentWrap { width:900px; margin:0 auto}
+.continental .intTrnBox {
+float:left; width:300px;
+height:100px
+}
+.intTrnBox.mens { float:left; width:600px}
+.intTrnBox.womens { float:right; width:300px}
+.intTrnBox h3,
+.intTrnBox h3{ text-transform:uppercase; font:bold 14px/14px Arial; padding:26px 0 14px}
+.fifa .intTrnList > li{ float:left;}
+.intTrnList > li > a{ display: table-cell; vertical-align:middle; height:42px; width:275px; padding:0 10px 0 0; }
+.intTrnList > li > a:hover{ text-decoration: none}
+a:hover .intTrnName { font-weight:bold}
+.intTrnDate { display:block; font-size:10px; color:#808080}
+.natTeamList{
+margin:0 auto;
+display:none ;
+}
+.is-active .natTeamList { display:block }
+.natTeamList > li{ float:left;}
+.natTeamList > li > a{ display: table-cell; vertical-align:middle; height:32px; width:169px; padding:0 10px 0 20px; }
+.natTeamList > li > a:hover{ background-color:#DCDCDC}
+.clubsContentWrap { width:996px; margin:0 auto 15px;}
+.league,
+.clubsWrap,
+.mostClubsWrap { float:left; width:330px}
+.leagueWrap{ float:left;}
+.leagueSelect { margin:15px auto 0; width: 310px;}
+select { width:280; margin:0 auto}
+.leagueLogo.i-5{ margin: 30px auto;display: block;}
+.leagueLogo img { background-color:#DCDCDC}
+.clubList li { margin-bottom: 10px; width: 150px; word-wrap: break-word;}
+.clubsWrap .clubList { float: left; margin-left:15px}
+.clubsWrap { min-height:280px;}
+.mostClubsWrap h3 {text-transform:uppercase; font:bold 14px/14px Arial; padding:0 0 14px 20px}
+.mostClubsWrap { margin-top:20px; border-left: 1px solid #C6C6C6;}
+.mostClubsWrap .clubList { padding-left:30px}
+.dd { width:auto!important; position:relative}
+.ddTitle {
+background-color:#cecece; padding:10px; border-top:1px solid #AAAAAA; position: relative; width:290px; border-bottom: 1px solid #e4e4e4}
+.wmc-selector .ddTitle {
+width:260px; float: left; margin:0px 10px 10px 6px}
+.wmc-selector .wmc-selector.btn {
+float: left; margin-left:10px}
+.dd .arrow {
+background:transparent url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat -21px -69px;
+display:block; position:absolute; right:8px; cursor:pointer;
+width:16px; height:12px; }
+.ddChild {
+overflow-x:hidden ;
+-ms-overflow-x:hidden;
+max-height:220px
+}
+.ie8 .ddChild {
+-ms-overflow-x:hidden;-ms-overflow-y: scroll; width:310px;
+}
+.ddChild li{ width:290px;background-color:#cecece; padding:10px}
+.ddlabel { cursor:pointer;}
+.wmc-selector .ddChild.ddchild_.border.shadow {top: 36px !important;left: 6px;width: 280px; overflow-x:hidden; height:200px}
+.wmc-selector #wmc-filter-match_child {left:302px;}
+#wmc-filter-competition_msdd, #wmc-filter-match_msdd { text-transform:uppercase}
+table {width: 100%; color:#3B3B3B;}
+td { border-bottom:1px solid #DCDCDC; border-top:1px solid #DCDCDC; padding: 8px 2px;}
+tr.odd{ background-color:#FFFFFF;}
+tr.even{ background-color:#F4F4F4;}
+td, th{ vertical-align:middle; text-align:center;}
+thead { background-color:#DCDCDC}
+th{ font-weight:bold; padding: 6px 2px;}
+.ie td{ height:14px;}
+table tr.first td{ padding-top:8px;}
+table thead acronym{ cursor:help;}
+table .noTableData {font-size:12px}
+.ie7 .grid_4 caption, .ie7 .grid_3 caption { line-height:30px;}
+.grid_4.grid_left { clear:left; }
+th.tbHoverCol {background-color:#e7ecef;}
+#fwc_masterContainer td.tbHoverCol { background-image:none; background-color:#f6f7f8; font-weight:bold !important;}
+#fwc_masterContainer td.tbHoverRow, #fwc_masterContainer l.tbHoverRow a{font-weight:bold !important;}
+#fwc_masterContainer td.tbHoverRow{background:#f0f3f5 url('http://img.fifa.com/imgml/table/td_even.png') repeat-x 0 0;}
+#fwc_masterContainer td.tbHoverCol.tbHoverRow { background-color:#e7ecef; font-weight:bold !important;}
+th.tbHeaderSortAsc acronym{background:transparent url('http://img.fifa.com/imgml/table/asc.png') no-repeat center right; padding:0 10px;}
+th.tbHeaderSortDesc acronym{background:transparent url('http://img.fifa.com/imgml/table/desc.png') no-repeat center right;padding:0 10px;}
+th { width:32px;}
+td.team, th.team,
+td.player, th.player { text-align:left; width:auto}
+td.rnk { font-weight:bold}
+caption {
+background-color:#3B3B3B; color:#FFFFFF; font-weight:bold;
+text-align:center; text-transform:uppercase; padding:6px 2px;}
+th.marker,
+td.marker {width:2px!important}
+.standings th.rnk,
+.standings th.pref { width:16px!important; padding-left:0!important; padding-right:0!important}
+.standings .icon-is-live { display:none ; float:right; margin-right:20px}
+.standings .icon-is-pref { display:none ; }
+.standings.basic{}
+.standings.full{}
+.standings.full th { width:18px; padding-right:1px}
+.standings.full th.team { width:auto}
+.standings.full .tblSubHeader { background-color:#f4f4f4 }
+.standings.full .tblSubHeader th { color:#808080; width:auto; text-transform: uppercase}
+.standings.full .mp,
+.standings.full .mph,
+.standings.full .mpa,
+.standings.full .dg,
+.standings.full .tot,
+.standings.full .ho,
+.standings.full .aw { padding-left:16px}
+table.standings caption.cpt-regular { display: none;}
+div.standingAggr.clubStandings table.standings caption.cpt-regular { display: table-caption;}
+.basic .tblSubHeader,
+.basic .mph, .basic .wih, .basic .drh, .basic .loh, .basic .gfh, .basic .gah,
+.basic .mpa, .basic .wia, .basic .dra, .basic .loa, .basic .gfa, .basic .gaa
+{ display:none}
+.ptMpE .tblSubHeader,
+.ptMpE .wi,.ptMpE .dr,.ptMpE .lo,.ptMpE .gf,.ptMpE .ga,.ptMpE .dg,
+.ptMpE .mph, .ptMpE .wih, .ptMpE .drh, .ptMpE .loh, .ptMpE .gfh, .ptMpE .gah,
+.ptMpE .mpa, .ptMpE .wia, .ptMpE .dra, .ptMpE .loa, .ptMpE .gfa, .ptMpE .gaa{ display:none}
+.ptMp .tblSubHeader,
+.ptMp .wi,.ptMp .dr,.ptMp .lo,.ptMp .gf,.ptMp .ga,.ptMp .dg,.ptMp .diff,
+.ptMp .mph, .ptMp .wih, .ptMp .drh, .ptMp .loh, .ptMp .gfh, .ptMp .gah,
+.ptMp .mpa, .ptMp .wia, .ptMp .dra, .ptMp .loa, .ptMp .gfa, .ptMp .gaa{ display:none}
+.standings.legend{ margin-top:10px}
+.standings.legend td{ text-align:left; font-style:italic; text-indent:12px}
+.standings.legend .t-statusText{ text-indent:6px}
+.t-status-64 td.marker,
+.t-status-131072 td.marker,
+.t-status-32768 td.marker,
+.t-status-4096 td.marker,
+.t-status-1024 td.marker,
+.t-status-16 td.marker
+{ background-color:#70ca72}
+.t-status-8192 td.marker,
+.t-status-32 td.marker,
+.t-status-2 td.marker,
+.t-status-65536 td.marker,
+.t-status-2048 td.marker
+{ background-color:#89d78a}
+.t-status-128 td.marker
+{ background-color:#a9e0ab}
+.t-status-1048576 td.marker,
+.t-status-262144 td.marker
+{ background-color:#86bbe5}
+.t-status-16384 td.marker,.t-status-256 td.marker
+{ background-color:#b7dfff}
+.t-status-512 td.marker,
+.t-status-1073741824 td.marker,
+.t-status-1 td.marker
+{ background-color:#79a6ca}
+.t-status-4 td.marker
+{ background-color:#feae9d}
+.t-status-8 td.marker
+{ background-color:#fe856b}
+.standings .is-live .icon-is-live { display:block;}
+.standings .is-preferred .icon-is-pref { display:block;}
+.t {position:relative;}
+.t.home, .t.home .t-i {float:left;}
+.t.away, .t.away .t-i {float:right;}
+.i-1{ width:20px;height:20px;}
+.i-2{ width:30px;height:30px;}
+.i-3{ width:42px;height:42px;}
+.i-4{ width:80px;height:80px; }
+.i-5{ width:150px;height:150px;}
+.i-3-flag{ margin:4px 0}
+[class*="i-"]{ position:relative; overflow:hidden}
+[class*="i-"] img{ position: absolute; top:0; left:0; max-width:100%; height:auto;}
+[class*="i-"] img:first-child{ z-index:1}
+.t-i .i-3-flag,
+.t-i .i-4-flag{ position:static;}
+.s { margin:0 auto; position:relative; text-align:center;
+}
+.m { position:relative }
+.liveLabel {
+background-color:#8dc613; text-align:center; font:bold 12px/14px Arial; color:#FFFFFF;
+padding:3px 10px; text-transform:uppercase; display:none}
+.is-live .liveLabel { display: block }
+.m:before,
+.m:after,
+.m-head:before,
+.m-head:after { content:""; display:table; }
+.m,
+.m:after,
+.m-head,
+.m-head:after { clear:both; }
+.m {min-height:62px; border-bottom:1px solid #DCDCDC; background-color:#f6f6f6}
+.m > a { width:100%; min-height:62px; display:block}
+.m > a:hover { text-decoration:none}
+.m-head { clear:both;padding:6px 8px;}
+.m-head {background-color:#e7e7e7;}
+.m-matchtype{margin-right: 3px;font-weight: bold;float: left;}
+.m-matchtype:after{ content:"\2013" ; display: inline; }
+.m-date { float:left; font-style:italic; color:#6c6b6b;}
+.m-compName { float:right; font-weight:bold; color:#3B3B3B; text-align:right}
+.m-compgroup { float:right; font-weight:bold}
+.t { width:30%;}
+.t-n {margin-top:4px}
+.t-i {text-align:center}
+.t.home .t-i,
+.t.away .t-i {margin:0 8px}
+.t-nText {font:normal 14px/1.2 Arial}
+.t.home .t-n {text-align:left}
+.t.away .t-n {text-align:right}
+.m .t-i img{background-color:#f6f6f6 }
+.s { width:40%}
+.s-stat{padding:0;}
+.s-resText{ font:bold 20px/20px Arial; color:#3B3B3B;}
+.s-statText { color:#808080; }
+.mc-match-is-fixture .s-resText{ color:#808080}
+.mc-match-is-live .s-statText {
+display:inline-block; min-width:24px; background-color:#8dc613;
+text-align:center; font:bold 12px/12px Arial; color:#FFFFFF;
+padding:2px 4px; text-transform:uppercase;}
+.m-agg {padding:1px 0 0 0;}
+.aggRes { width:50px; margin:0 auto; font-weight:bold; text-align:center}
+.home-winner .t.home .t-nText{ font-weight:bold}
+.away-winner .t.away .t-nText{ font-weight:bold}
+.m-list { background-color:#DCDCDC;}
+.m-list .m {padding-top:6px}
+.bH h2.m-listTitle {font:bold 16px/1.2 Arial; padding:0 0 4px 16px; margin:0}
+.bH h2.m-listTitle .countryName{ font-weight:normal;}
+.m-listTitle {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width:465px}
+.m-listSubT { color:#6c6b6b; margin-left:16px}
+.accordion .bH .liveLabel { position:absolute; right:74px; top:22px}
+.accordion .m-listLink.rr-qlCont {margin-left:6px}
+.m-list .m,
+.m-list .rr-qlCont,
+.m-list .m-head{ margin-left:6px;}
+.m-list + .moreLinkRight,
+.box.m-list .moreLinkRight{border-left: solid 6px #DCDCDC}
+.m-list-small .box.m-list .moreLinkRight{border-left: 0}
+.m-list-small .t .t-i {display:none}
+.m-list-small .m-list .m,
+.m-list-small .m-list .rr-qlCont { margin-left:0}
+.m-list-small .m { background-color:#FFFFFF; min-height:52px; padding:0 10px}
+.m-list-small .m > a {min-height: 52px;}
+.m-list-small .t { width:35%;}
+.m-list-small .s { width:30%; padding-top:9px}
+.m-list-small .t-n {margin-top: 9px;}
+.m-list-small .t-nText { font-weight:normal}
+.m-list-small .s-resText { font:bold 14px/16px Arial}
+.m-list-small .m-agg{ padding:4px 0; color:#888888}
+.m-list-small .m-head {margin-left: 0;}
+.wmc-lastNext { margin-bottom:20px; }
+.wmc-lnBox {width:320px; background-color:#FFF; padding:0; vertical-align:top; }
+.wmc-lnBox + .wmc-lnBox { border-left:12px solid #DCDCDC}
+.wmc-lnBox .cnt-title{ text-align:left; background-color:#DCDCDC}
+.wmc-lnBox .m-head { background-color: #3B3B3B; color: #FFFFFF; font-weight: bold; padding: 6px 2px; text-align: center; }
+.wmc-lnBox .m-date {color: #FFFFFF;float: none; font-style: normal;}
+.wmc-lnBox .m { border:0; height:auto; background-color:#FFFFFF; padding-bottom:10px}
+.wmc-lastNext .wmc-lnBox .s-aggregateText:first-child {position: relative;left: auto;}
+.wmc-lnBox .t-nText {margin-left: 0px !important;}
+.wmc-lnBox .m-compgroup {display:none;}
+.wmc-lnBox .t { width: 37%;}
+.wmc-lnBox .i-3 img.PlaceholderTW50 { margin: 0px}
+.wmc-lnBox .t .t-i.i-3 { float:none; text-align:center; margin:10px auto; width:50px; height:50px}
+.wmc-lnBox .m .t-i img{background-color:#FFF }
+.wmc-lnBox .i-3-flag {margin: 12px 0;}
+.wmc-lnBox .t.home .t-n,
+.wmc-lnBox .t.away .t-n { text-align:center; margin-top:auto}
+.wmc-lnBox .t-nText { font: bold 12px/1.2 Arial; text-transform:uppercase}
+.kern{ letter-spacing:-1px}
+.wmc-lnBox .s { width: 21%;}
+.wmc-lnBox .s-res { padding-top: 22px;}
+.wmc-lnBox .s-resText { font: bold 24px/28px Arial;padding: 0 6px;}
+.res .s-resText { background-color: #3B3B3B; color: #FFFFFF; }
+.fix .s-resText { background-color: #FFFFFF; }
+[class^="f-"] {font-family:Arial;color:#3b3b3b}
+.f-0 {font-size:10px}
+.f-1 {font-size:11px}
+.f-2 {font-size:12px}
+.f-3 {font-size:13px}
+.f-4 {font-size:14px}
+.f-5 {font-size:15px}
+.f-6 {font-size:16px}
+.f-7 {font-size:17px}
+.f-8 {font-size:18px}
+.f-9 {font-size:19px}
+.f-10 {font-size:20px}
+.f-11 {font-size:21px}
+.f-12 {font-size:22px}
+.f-13 {font-size:23px}
+.f-14 {font-size:24px}
+.f-15 {font-size:25px}
+.f-16 {font-size:26px}
+.f-17 {font-size:27px}
+.f-18 {font-size:28px}
+.f-30 {font-size:40px}
+.f-35 {font-size:45px}
+.f-45 {font-size:55px}
+.f-48 {font-size:58px}
+.f-grey-1 {color:#3b3b3b}
+.f-grey-2 {color:#6b6b6b}
+.f-grey-3 {color:#808080}
+.f-white {color:#fff}
+.f-green {color:#8DC613}
+.f-upper {text-transform:uppercase}
+.f-lower {text-transform:lowercase}
+.f-bold {font-weight:bold}
+.f-italic {font-style:italic}
+.f-left {text-align:left}
+.f-right{text-align:right}
+.mb20 { margin-bottom:20px }
+.mt20 { margin-top:20px }
+.pb20 { padding-top:20px }
+.pt20 { padding-top:20px }
+.pl9 { padding-left:9px}
+.mbRemove{ margin-bottom:0!important}
+.mtRemove{ margin-top:0!important}
+.pbRemove{ padding-bottom:0!important}
+.ptRemove{ padding-top:0!important}
+.cnt-title, .rr-title {color: #3B3B3B; font:bold 20px/24px Arial,Verdana,Serif; height: 24px; padding: 5px 0 5px 8px; text-decoration: none;}
+.cnt-title a {color:#3B3B3B}
+.wmc-topScorer .cnt-title .cnt-titleText {padding-left: 0px;}
+.grid_4 .t.home .t-nText, .grid_4 .t.away .t-nText {display:block}
+.grid_4 .t.home, .grid_4 .t.away {text-align:center}
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+.rr-btnwrap, .btn_ql { float: left; left: 50%; position: relative;}
+.rr-btnwrap .rr-btn, .btn_ql ul {float:left; position:relative; left:-50%;}
+.rr-btn, .rr-btn div, .btn_ql li, .btn_ql li a { background: url("http://img.fifa.com/imgml/fifacom2/btn.png") no-repeat scroll 0 0 #FFF;cursor: pointer;}
+.rr-btn, .btn_ql li { background-position: right 0; border: medium none; float: left; height: 30px; margin: 0 6px; padding: 0 14px 0 0;}
+.rr-btn div, .btn_ql li a { background-position: left 0; color: #FFFFFF; font: bold 11px/30px Arial; padding: 0 0 0 14px; text-transform: uppercase;}
+.btn_ql li, .btn_ql li a { display:block;}
+.btn_ql li a:hover { color:#FFF; text-decoration:none;}
+.wmc-selector-btn-text {background-color: #cecece;padding: 10px;border-top: 1px solid #e4e4e4;border-bottom: 1px solid #AAAAAA;text-transform: uppercase; cursor:pointer;}
+#wmc-selector-btn-comps {padding-top: 10px;}
+[class^="arr-"] {display: inline-block;}
+.arr-P32, .arr-N32 {
+padding:32px 32px 0 0;
+background: #FFFFFF url(http://img.fifa.com/imgml/wmc/icons-cal.png) no-repeat -5px -9px; }
+.arr-N32 { background-position:-50px -9px;}
+.arr-N18,
+.arr-P18,
+.arr-N12,
+.arr-P12,
+.arr-N24,
+.arr-Down,
+.arr-Back{ background:url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat 0 0 transparent;}
+.arr-N18{ padding:18px 18px 0 0; background-position:-21px -187px}
+.arr-P18{ padding:18px 18px 0 0; background-position:-21px -127px}
+.arr-N12{ padding:12px 12px 0 0; background-position:-23px -292px}
+.arr-P12{ padding:12px 12px 0 0; background-position:-24px -242px}
+.arr-N24 {width:13px;height:24px;background-position:-26px -581px}
+.arr-Back{ padding:13px 8px 0 0; background-position:-26px -8px}
+.arr-Next{ padding:13px 8px 0 0; background-position:-26px -686px}
+.arr-Down{ padding:12px 18px 0 0; background-position:-20px -71px}
+[class^="icon-is-"] {
+display: inline-block;
+width: 16px;
+height: 16px;
+vertical-align: text-top;
+background-image: url(http://img.fifa.com/imgml/wmc/icons-fd-16.png);
+background-position: 0 0;
+background-repeat: no-repeat;
+margin-right: 2px;
+}
+.icon-is-live { background-position: -16px 0;}
+.icon-is-same { background-position: -32px 0;}
+.icon-is-up { background-position: -48px 0;}
+.icon-is-down { background-position: -64px 0;}
+.icon-is-pref { background-position: -80px 0;}
+.hide-diff-icon td.diff span {
+visibility:hidden;
+}
+[class^="icon-comment-"] {
+display: inline-block;
+width: 60px;
+height: 30px;
+vertical-align: middle;
+background-image: url(http://img.fifa.com/imgml/wmc/icons-general.png);
+background-position: 0 0;
+background-repeat: no-repeat;
+}
+.icon-comment-add {background-position:0 -485px}
+.icon-comment-reply {background-position:-16px -526px;width:30px}
+.rr-qlCont,
+.moreLinkRight{clear:both; background-color:#e6e6e6; border-bottom:1px solid #cdcdcd; margin:0; padding:13px}
+.rr-ql > li, .rr-ql > li a,
+.moreLink > li, .moreLink > li a{ font-size:11px; font-weight:bold; color:#5e5e5e; text-align:center}
+.rr-ql > li a:hover,
+.moreLink > li a:hover{ color:#3b3b3b;}
+.moreLink {text-align:center;}
+.nav { padding:4px 0; height:22px; background-color:#FFFFFF}
+.nav > a{
+line-height:16px; font-size:13px; color:#3B3B3B;
+background:transparent url(http://img.fifa.com/imgml/wmc/icons-mobile.png) no-repeat right -99px;}
+a.pgNext { float:right; padding-right:24px; margin-right:-8px}
+a.pgPrev { float:left; padding-left:16px; background-position: -6px -70px;}
+.m-h-top span {display: inline-block; margin-left:5px}
+.phBackLink .m-h-top{ margin-left:14px}
+.wmcBackLink.rr-qlCont {background-color: transparent;border-bottom: 0;padding: 0;}
+.wmcBackLink .rr-ql > li{ text-align:left}
+.wmcBackLink .rr-ql > li a{ font:bold 20px/1 Arial; color:#3B3B3B}
+.wmcBackLink .rr-ql > li a:before {
+background:url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat -26px -8px transparent; width:12px; height:16px; content:"";
+display: inline-block}
+.box {margin-bottom:20px}
+.bH h2,
+.bH h3 {color: #3B3B3B; font:bold 20px/24px Arial,Verdana,Serif; height: 24px; margin: 5px 0 5px 8px; text-decoration: none;}
+.bH h2 a,
+.bH h3 a {text-decoration:none}
+.bC { background-color: #FFFFFF;}
+.box .bC:before, .box .bC:after { content:""; display:table; }
+.box .bC , .box .bC:after { clear:both; }
+.box.cnt-box .bC,
+.box.bNotitle.cnt-box .bC {padding:0 0 10px}
+.cnt-left {float:left}
+.cnt-right {float:right}
+.cnt-left,.cnt-right {width:320px}
+.cnt-subtitle {height: 40px;margin:0 3px}
+.cnt-subtitle h3 {color: #3B3B3B;font: bold 14px/14px Arial;padding: 10px;text-transform: uppercase;float:left}
+.cnt-subtitle.noBg {height:20px}
+.cnt-subtitle.noBg h3 {background:none;padding:0}
+.cnt-box .shadowDivider{clear:both;width:100%;padding-top:10px;}
+.cnt-oneColumn .cnt-left, .cnt-oneColumn .cnt-right {width:100%}
+.cnt-oneColumn .cnt-subtitle {margin:0 3px 0 2px}
+.accordion .bH{
+border-left:6px solid #f4c747;position:relative; cursor:pointer;
+background:#FFFFFF url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat right -328px;
+min-height:40px; padding:12px 0; }
+.accordion.is-closed .bH { background-position: right -398px;}
+.box.accordion .bC{ background-color:#DCDCDC}
+.box.accordion .bH a:hover{ text-decoration : none;}
+.box.accordion .accordion-icon {float: right;height: 65px;position: absolute;right: 0;top: 0;width: 50px;}
+.box.accordion .bF .footerButton ul li { display:inline; }
+.box.accordion .bF .footerButton ul li.fixture { float:left; }
+.box.accordion .bF .footerButton ul li.standings { float:right; }
+#socialSharingToolsBox { margin:11px 10px 0px 0px; padding-left:0px}
+#socialSharingToolsBox > div{ float:left; margin-left:0px}
+.sharingToolsBox .bH {display:none}
+.sharingToolsBox .bC { background-color: transparent}
+#socialSharingToolsBox #shareFwc {position: relative;}
+#shareFwcText{position: absolute;top: 46px;left: 21px;color: #ffffff;}
+.grid_4 .sharingToolsBox.box, .grid_4 #socialSharingToolsBox > div { background-image:none}
+.box.advert .bC {padding: 10px;}
+.nl-list{ background-color:#FFFFFF}
+.nt-content{ font-family: Verdana}
+.nt-sqr-80 { min-height: 80px;}
+.nt-sqr-80 .nt-thumb img {border: 0;padding: 0;}
+.nl-listItem { border-top: 1px solid #DCDCDC;padding:6px}
+.nl-lnews .nl-listOut{ margin:3px}
+.nt-lnd-160 { padding-left: 180px; min-height:92px}
+.nt-lnd-160.thumbBg .nt-thumb,
+.nt-lnd-160Top.thumbBg .nt-thumb { width: 180px; background:none}
+.nl-lnews .nl-listItem,
+.nl-lnews .nl-listItem .nt-content,
+.nt-lnd-160.thumbBg .nt-thumb img,
+.nt-lnd-160Top.thumbBg .nt-thumb img { margin:0}
+.nt-lnd-160 .thumbFallback,
+.nt-lnd-160Top .thumbFallback {left:0 ;}
+.nl-topStory .nl-listOut .cnt-title,
+.nl-topStory .nl-listItem .cnt-title { background-color:#DCDCDC; margin: 0; padding:8px 0}
+.nl-topStory .nl-listItem { margin-left: 329px; width: auto; padding: 6px 0; margin-right:0;}
+.nl-topStory .nl-listItem.first {padding-top: 0;}
+.nl-topStory .nl-listOut { margin: 0; width:329px}
+.nl-topStory .nl-listOut .nt-content { margin:10px 3px 5px}
+.nl-topStory .nl-listItem.first .nt-content { margin-top: 6px;}
+.nl-topStory .nl-listOut .nt-content .nt-thumb img {margin-left: 4px;margin-top: -2px;}
+.boxWhitePhoto { background-color: #FFFFFF; display: table; width: 100%; padding:20px 0 14px}
+.thumbList80 { text-align:center}
+.thumbList80 li{ display:inline-block}
+a.acc-title:hover { text-decoration:none }
+.wmc .cnt-subtitle { background-color:#ffffff;height: 33px;}
+.wmc .cnt-subtitle h3{overflow: hidden; white-space: nowrap; width:290px; text-overflow: ellipsis; }
+.pho-list.cf.wmc, .pho-list.cf.wmc .nav, .wmc .cf.phgal-list, .wmc .nav > a { background-color: transparent}
+.wmc .cf.phgal-list li {width:326px; margin:5px 3px}
+.wmc .cf.phgal-list li a {margin-left:3px}
+.wmc .cf.rr-qlCont {margin-left: 3px;width: 308px;margin-top: -2px;padding-left: 0px;}
+.phgal-list.phgal-lnd-320 .phgal-item {display: block;width: 320px;height: 180px;overflow: hidden; background-color:#e6e6e6}
+.phgal-list.phgal-lnd-320 .phgal-item .thumbFallback {
+width: 332px ;
+height: auto;}
+.phgal-title, .phgal-sharingTools { float:none!important}
+.phgal-title {color: #3B3B3B!important; font:bold 20px/24px Arial,Verdana,Serif!important; height: 24px; margin: 5px 0 5px 18px !important; text-decoration: none;}
+.phgal-sharingTools{ background-color:#FFFFFF; height:30px; padding-top:8px; margin:0 23px 0 19px !important}
+.phgal-top-left, .phgal-top-right, .phgal-bottom-left, .phgal-bottom-right,.phgal-top { display:none!important}
+.phgal-container{ background:none!important}
+.phgal-list{ background-color:#FFFFFF}
+.phgal-bottom { background:none!important}
+.phgal-aggregatorTitle{ padding-left:10px }
+.phgal-aggregator .cnt-left { background-color:#FFFFFF}
+.phgal-aggregator .cnt-left + .cnt-left { margin-left:12px}
+.phgal-aggregator.cnt-box .rr-qlCont { margin: 0;}
+.phgal-aggregator .nt-content { font-family: Arial;}
+.phgal-aggregator .cnt-box .shadowDivider { padding-top: 20px;}
+.phgal-aggregator .cnt-subtitle {height: 30px; margin:0;}
+.phgal-aggregator .cnt-subtitle h3 {padding: 8px;}
+.phgal-aggregator .nt-content .nt-newsTitle { margin: 0 8px;}
+.phgal-sharingTools {z-index:1 !important}
+.phgal-sharing.PrintButton {margin-right:5px !important}
+.box.disclaimer { margin-left:6px;background-color:#E7E7E7;color:#6C6B6B;font-style:italic;margin-top:20px }
+.box.disclaimer .nt-content .nt-text { margin:5px }
+.caB-wrap { height:92px; background-color:#FFFFFF; margin-bottom:20px;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); position:relative}
+.arr-P32 { margin:20px 0 0 15px; background-color: #ffffff;position: absolute;left: 5px;width: 11px;z-index: 1;}
+.arr-N32 { margin:20px 15px 0 0; background-color: #ffffff;position: absolute;right: 0px;width: 9px;z-index: 1;}
+.arr-P32, .arr-N32 {margin-top:19px}
+.caB-list-wrap {height: 32px; margin: 0 52px; overflow: hidden; padding-top: 20px; position: relative;}
+.caB-year{height:55px;}
+.caB-itemT { font:bold 14px/32px Arial; color:#888888;}
+a:hover .caB-itemT { text-decoration:none}
+.is-active .caB-itemT { font-size:18px; color:#3B3B3B;}
+.ie .caB-list-wrap {margin-left:78px}
+.caB-single .caB-list { text-align:center; width:auto}
+.caB-single .caB-item{ display:inline-block}
+.caB-multi .caB-list { text-align:center; position:absolute}
+.caB-multi .caB-item{ float:left}
+.caB-multi .caB-item{ margin-left:30px;}
+.caB-m { margin:7px auto 0; text-align:center; font-size:0 ; position:relative ;}
+.caB-mCal,
+.caB-mMD{border-color: #bdbdbd; border-style: solid; display: inline-block }
+.caB-mCal{ border-width: 1px 1px 0 1px}
+.caB-mMD{ border-width: 1px 1px 0 0}
+.caB-mCal.is-active,
+.caB-mMD.is-active { background-color:#DCDCDC}
+.mCal, .mMD {
+background:transparent url(http://img.fifa.com/imgml/wmc/icons-cal.png) no-repeat 0 -56px;
+display:block; width:44px; height:32px;}
+.mMD { background-position:-44px -56px;}
+.caB-ddMenu {
+position:absolute; top:0; left:212px; margin-top:33px;
+z-index:1 ;
+}
+.caB-cal { position:relative; width:228px; height:154px; border-top:1px solid #DCDCDC;}
+.caB-cal .arr-P12,
+.caB-cal .arr-N12 { margin:0; position:absolute; top:10px; z-index:10; cursor:pointer}
+.caB-cal .arr-P12 {left:40px}
+.caB-cal .arr-N12 { right:40px}
+.caB-calList { position:absolute;}
+.caB-calItem { float:left; width:228px; box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.2);background-color:#FFFFFF; padding-bottom:6px }
+.cal-main caption {font:bold 12px/12px Arial; color:#6C6B6B; text-align:center; padding:8px 0; background-color:#FFFFFF}
+.cal-main thead {background-color: #FFFFFF;}
+.cal-main th {font:bold 10px/12px Arial; color:#6C6B6B; width:auto; padding:4px }
+.cal-day { padding:4px; border:0}
+.cal-day a{font:bold 12px/12px Arial; color:#9B9B9B; display: block; height: 100%;}
+.cal-day a:hover{color: #0045ec; text-decoration:none}
+.ch {
+height:118px ;
+position:relative; background-color: #FFFFFF;
+margin: 0 9px 10px 9px;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.ch-text { margin:30px 0 0 118px;}
+.ch-title{font: bold 20px/26px Arial; color:#3B3B3B;}
+.ch-subTitle{font: bold 13px/12px Arial; color:#6c6b6b;}
+.ch-subtitle img.flag {margin-right: 6px;}
+.ch-thumb { float:left;margin:10px 25px 10px 15px; }
+.ch-thumb img{background-color:#FFF }
+.ch-thumb .i-4-flag{ margin-top:12px}
+.ch-nav1 {bottom: -4px; left: 118px; position: absolute; z-index: 1;}
+.ch-nav1 ul li{ float:left; padding: 8px 0 12px}
+.ch-nav1 ul a{ display:block;padding:0 12px; border-left:1px solid #3B3B3B; font-weight:bold}
+.ch-nav1 ul li.first a,
+.ch-nav1 ul li.is-active a,
+.ch-nav1 ul li.is-nextactive a{ border-left:0}
+.ch-nav1 ul li.is-active{background-color:#DCDCDC; border-top:1px solid #C6C6C6;}
+.ch-asideTop{ position:absolute; right:0; top:0; margin:10px 7px 0 0; padding:4px 5px 0 0;}
+.ch-asideBot { position:absolute; right:0; top:52px; margin:0 7px 0 0; padding:0 5px 0 0;}
+.ch-asideTop .teamname {font: bold 20px/28px Arial; text-align: right; text-transform: uppercase;}
+.ch-team .ch-title{ text-transform:uppercase}
+.ch-ext {height: 118px;position: absolute;right: 0;top: 0;}
+.ch-genderlink { position:absolute; right:0; bottom:0; z-index: 1;}
+.ch-genderlink a{ padding:8px 14px; font:bold 12px/1 Arial; color:#FFF; background-color:#264f83; display:block}
+.ch-genderlink a:before {
+border-color: transparent #264f83;border-style: solid;border-width: 28px 28px 0 0;bottom: auto;
+position: absolute;left: -28px;top: 0; width: 0;content:"";}
+.ch-ext .wmc-live-matches {position:absolute;right:160px;width:170px;}
+.ch-ext .wmc-live-matches.is-not-live {display:none;}
+.wmc-live-matches {height: 100px;margin-top:31px}
+.wmc-live-matches span {display: block;float: left;padding: 0 5px 0 0;vertical-align: text-bottom;width: 47%;}
+.wmc-live-matches span.f-green {margin-top:-18px}
+.wmc-live-matches .f-6.f-upper {font-size:13px; font-weight:bold;padding-top: 7px;}
+.wmc-status-trn {background-color:#BDBDBD;height: 28px;overflow: hidden;width: 150px;position:relative;}
+.progress-bar {background:url("http://img.fifa.com/imgml/wmc/progress-trn-arrow.gif") no-repeat scroll right top #0072BC; height: 28px; width: 100px;}
+.progress-text{ position:absolute;right:-20px; top:58px; width:170px; font-size:12px;}
+.progress-mdays{ padding:21px 0 2px; text-transform:uppercase}
+.progress-label{line-height: 16px;}
+.wmc-countdown {top:9px;position: absolute;width: 150px;right:160px; font-size:13px}
+.wmc-countdownTitle {font-weight:bold}
+.wmc-countdownDays {color: #808080; display:block; font:bold 48px/1 Arial; color:#f4c747; height:44px; letter-spacing:-1px}
+.wmc-league-form {padding-top: 10px; position: absolute; right: 0; top: 0; width: 260px;}
+.wmc-league-form p{font:bold 11px/20px Arial;}
+.wmc-league-form ul li{
+display:inline-block; width:36px; padding:8px 0; text-align:center;
+background-color:#DCDCDC; border-top:1px solid #C6C6C6; margin-right:3px;
+font:bold 15px/16px Arial; text-transform:uppercase}
+.wmc-wr{ padding-top:18px}
+.wmc-wr > *{ float:left; margin-right:10px}
+.wmc-wr-title{ display:block; margin-top:6px; font-weight:bold}
+.wmc-wr-rank{ font:bold 58px/1 Arial}
+.wmc-wr-gen{position: relative;padding:4px 18px 4px 6px; background-color:#3b3b3b; color:#FFF; margin-top:6px; font:bold 16px/1 Arial}
+.wmc-wr .arr-N24 {position: absolute;top: 0;right: 0; background-color:#FFF}
+.wmc-topScorer { margin-bottom:20px}
+.competition { background-color: #3B3B3B;color: #FFFFFF;font-weight: bold; padding: 6px 2px; text-align: center;}
+.m-list .wmc-topScorer .t,
+.wmc-topScorer .t { width: auto!important; display:table-cell;}
+.wmc-topScorer .t-i { text-align:center; margin: 0px auto 4px;}
+.wmc-topScorer .t-n {margin-top: auto;}
+.wmc-topScorer .t-i img{ background-color:#FFF}
+.wmc-topScorer .t-nText {font: normal 14px/1.2 Arial;}
+.playerName{font: bold 22px/1.2 Arial; margin-bottom:5px}
+.scorer { background-color:#FFFFFF; position:relative; margin-bottom:10px; }
+.scorer .player { margin:10px 124px 0 16px; min-height:95px}
+.scored { position:absolute; right:10px; top:36px; border:1px solid #DCDCDC; background-color:#F4F4F4;
+width:105px; height:auto; padding-top:10px; box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.2);}
+.scored p { text-align:center}
+.goals { font:bold 48px/1 Arial; color:#FFCF07}
+.scoredText { font:bold 12px/12px Arial; padding-bottom:8px}
+.scorer .rr-qlCont { background-color:#e6e6e6}
+.wmc-topScorer.noclub .scorer .player { min-height: 65px;}
+.wmc-topScorer.noclub .scorer .player .t {display: none;}
+.wmc-topScorer.noclub .scorer .player .playerName { margin-top:35px;}
+.wmc-curCompList { margin-bottom:20px}
+.wmc-curCompList li { border-bottom:1px solid #DCDCDC; background-color:#FFFFFF; clear:both; overflow:hidden;}
+.wmc-curCompList .t-i.i-3{ float:left; margin:10px;}
+.wmc-curCompList .t-i img{background-color:#FFF }
+.wmc-curCompList li .linkText { font-weight:bold}
+.currentComp { padding:25px 30px 25px 0; position:relative}
+.currentComp .arr-N18 { position:absolute; right:10px; top:50%; margin-top:-9px}
+.t-winner { position:relative; background-color:#FFFFFF; height:100px; border-bottom:1px solid #DCDCDC;}
+.ico-winner{
+background:url(http://img.fifa.com/imgml/wmc/icons-winner.png) no-repeat 0 0 transparent;
+position:absolute; width:75px; height:82px; right:5px; top:-9px; }
+.compWon {position:absolute; left:106px; top:20px;}
+.compWonText { font-weight:bold}
+.t-winner .t { padding-right:100px; width:auto}
+.t-winner .i-4 { width:50px; height:50px; margin:16px 12px}
+.t-winner .t-i img{background-color:#FFF }
+.t-winner .t-n { margin-top:0; padding-top:34px}
+.t-winner .t-i { float:left}
+.t-winner .t-nText { font: bold 20px/26px Arial;}
+.comment {border-bottom:2px solid #DCDCDC}
+.comment {background-color:#fff;position:relative}
+.cMatch-info, .c_reply {position:relative;background-color:#F6F6F6;height:30px}
+.cMatch-info .tHome, .cMatch-info .tAway {position:absolute;text-transform:uppercase;font:bold 11px/30px Arial;color:#3B3B3B}
+.cMatch-info .tHome {left:5px}
+.cMatch-info .tAway {right:5px}
+.avatarComment {float:left;margin:25px 0 5px 8px; position:absolute}
+.dateComment {right:10px}
+.nickname, .dateComment {position:absolute;height:20px;font-size:11px;margin-top:5px}
+.nickname {left:10px}
+.nickname, .nickname a, .nickname a:link, .nickname a:visited, .dateComment {color:#828282}
+.usercomment {padding:25px 0 10px 68px}
+.c_reply {clear:both;text-align:center;line-height:30px;cursor:pointer;}
+#dummyComm .linkAll{ text-align:center; font-weight:bold; display:block; font-size:13px; padding:10px}
+.commFrm {cursor:pointer; line-height:28px}
+.commFrm img{ display:none }
+.commFrm:after {
+content:""; display:block; width:46px; height:30px; float:right;
+background:transparent url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat -2px -485px }
+.commands {position:relative}
+.box .commFrm {position:absolute;right:0;top:-32px;}
+.mccommlatest.ajaxcomm .bH {display:none;}
+.box.mccommlatest .bC {background-color:#DCDCDC;}
+.c_reply img{ display:none}
+.usercomment {margin: 0 0 0 80px;padding: 27px 5px 5px 0; min-height:52px; overflow:hidden; text-overflow:ellipsis;}
+.latcom, .count {display:none}
+.commentsIC {padding:10px;background-color:#F6F6F6}
+#l_comment {display:block}
+#c_count {border:none;background-color:transparent;font-weight:bold}
+#c_comment {width:100%;border:1px solid #CDCDCD}
+.btnG {background-color:#808080;border:0 none;color:#FFFFFF;cursor:pointer;font-weight:bold;padding:5px 20px;}
+.btnG:hover {background-color:#444}
+.avatarContainer50 {width:50px;height:50px;background:#DDDDDD url(http://img.fifa.com/imgml/theclub/avatar50x50.png);margin:4px;}
+.avatarContainer24 {width:24px;height:24px;background:#DDDDDD url(http://img.fifa.com/imgml/theclub/avatar24x24.png);margin:4px;}
+.mC .commands {
+height: 32px;margin-top: 20px;background-color: #DCDCDC;padding: 20px 10px 5px;
+margin-left: -10px;margin-right: -10px;}
+.mC .commands .commFrm { height:32px; text-align:right; float:right}
+.mC #dummyComm{ margin:0 -10px 0 -10px}
+.mC #dummyComm br{ display:none}
+.commentError,.commentWarn{padding:20px 10px; font:bold 13px/1 Arial; border-bottom: 2px solid #DCDCDC }
+.c_replies{ margin:0 0 4px 74px}
+#dummyComm .c_replies .usercomment{ margin:0 0 0 44px}
+.comment.child{border-bottom-width: 1px; min-height:52px}
+.c_repliesCount{
+text-align:right; padding:8px 10px 8px 8px; cursor:pointer; float: right; margin-top:-30px;
+}
+.c_repliesCount:after {
+content:""; display:block; width:16px; height:16px; float:right;
+background:transparent url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat -22px -624px }
+.c_repliesCount.closed:after{ background-position: -22px -653px}
+.tabs{ position:relative; height:32px; margin-top:20px}
+.tabs .commFrm{ height: 32px;float: right;}
+.tabs .commFrm:hover{ text-decoration: underline}
+.tab1{color: #3B3B3B;font: bold 20px/24px Arial,Verdana,Serif;margin: 5px 0 5px 8px;}
+.tabs .tab2{ display:none!important }
+.summary .moreLinkRight{ background-color:transparent; border:0; text-align:right; font-weight:bold; padding:10px 0}
+.summary h1{font:bold 14px/1.2 Verdana}
+.totalC{ float:left}
+#cViewAll{ float:right}
+.totalC,#cViewAll{ margin:6px}
+#cViewAll > *{ margin-right:3px; padding:2px 4px}
+#cViewAll > a{ background-color:#bbb}
+.promoInPage {padding:0px 0 10px}
+.standingAggr .rr-qlCont{ margin:0 3px 0 9px}
+.grid_4 .standingAggr .rr-qlCont{margin:0}
+.standingAggr .innerMore .rr-qlCont{ margin:0}
+.standingAggr .grid_8{ margin-bottom:0}
+.phgal-title{ width:auto!important}
+.compStandings .innerMore { display:none;}
+.standingAggr.clubStandings .compStandings .innerMore { display:block;}
+.boxedClean .bC .bH,
+.boxedClean .bC .bF{ display:none}
+.boxedClean .box {margin-bottom: 0;}
+.adaptPhgalNlist .photolist,
+.adaptPhgalNlist .photolist + .box.nl-wrap,
+.adaptPhgalNlist .box.nl-wrap
+{
+width:320px; display: inline; float:left;padding: 0 3px;margin: 0 0 10px 6px;}
+.lang_E .de_matchLineUp{display:none;}
+.lang_E .fr_matchLineUp{display:none;}
+.lang_E .es_matchLineUp{display:none;}
+.lang_E .pt_matchLineUp{display:none;}
+.lang_E .ar_matchLineUp{display:none;}
+.lang_D .en_matchLineUp{display:none;}
+.lang_D .fr_matchLineUp{display:none;}
+.lang_D .es_matchLineUp{display:none;}
+.lang_D .pt_matchLineUp{display:none;}
+.lang_D .ar_matchLineUp{display:none;}
+.lang_F .en_matchLineUp{display:none;}
+.lang_F .de_matchLineUp{display:none;}
+.lang_F .es_matchLineUp{display:none;}
+.lang_F .pt_matchLineUp{display:none;}
+.lang_F .ar_matchLineUp{display:none;}
+.lang_S .en_matchLineUp{display:none;}
+.lang_S .de_matchLineUp{display:none;}
+.lang_S .fr_matchLineUp{display:none;}
+.lang_S .pt_matchLineUp{display:none;}
+.lang_S .ar_matchLineUp{display:none;}
+.lang_P .en_matchLineUp{display:none;}
+.lang_P .de_matchLineUp{display:none;}
+.lang_P .fr_matchLineUp{display:none;}
+.lang_P .es_matchLineUp{display:none;}
+.lang_P .ar_matchLineUp{display:none;}
+.lang_A .en_matchLineUp{display:none;}
+.lang_A .de_matchLineUp{display:none;}
+.lang_A .fr_matchLineUp{display:none;}
+.lang_A .es_matchLineUp{display:none;}
+.lang_A .pt_matchLineUp{display:none;}
+.lang_en .de_matchLineUp{display:none;}
+.lang_en .fr_matchLineUp{display:none;}
+.lang_en .es_matchLineUp{display:none;}
+.lang_en .pt_matchLineUp{display:none;}
+.lang_en .ar_matchLineUp{display:none;}
+.lang_de .en_matchLineUp{display:none;}
+.lang_de .fr_matchLineUp{display:none;}
+.lang_de .es_matchLineUp{display:none;}
+.lang_de .pt_matchLineUp{display:none;}
+.lang_de .ar_matchLineUp{display:none;}
+.lang_fr .en_matchLineUp{display:none;}
+.lang_fr .de_matchLineUp{display:none;}
+.lang_fr .es_matchLineUp{display:none;}
+.lang_fr .pt_matchLineUp{display:none;}
+.lang_fr .ar_matchLineUp{display:none;}
+.lang_es .en_matchLineUp{display:none;}
+.lang_es .de_matchLineUp{display:none;}
+.lang_es .fr_matchLineUp{display:none;}
+.lang_es .pt_matchLineUp{display:none;}
+.lang_es .ar_matchLineUp{display:none;}
+.lang_pt .en_matchLineUp{display:none;}
+.lang_pt .de_matchLineUp{display:none;}
+.lang_pt .fr_matchLineUp{display:none;}
+.lang_pt .es_matchLineUp{display:none;}
+.lang_pt .ar_matchLineUp{display:none;}
+.lang_ar .en_matchLineUp{display:none;}
+.lang_ar .de_matchLineUp{display:none;}
+.lang_ar .fr_matchLineUp{display:none;}
+.lang_ar .es_matchLineUp{display:none;}
+.lang_ar .pt_matchLineUp{display:none;}
+.overlaySelector {margin-bottom:20px;}
+.overlaySelector .filterStatus-desc {display:table-cell; padding:15px;}
+.overlaySelector .filterStatus {background-color:#FFFFFF;border-bottom: 1px solid #DCDCDC;clear:both;overflow:hidden;}
+.overlaySelector .filterStatus-control {line-height:30px;min-height:30px; text-align:center;clear:both;background-color: #E6E6E6; border-bottom: 1px solid #CDCDCD; color: #5E5E5E; font-size: 11px; font-weight: bold;}
+.overlaySelector .filterStatus-button {cursor:pointer;}
+#overlaySelectorCnt {
+visibility: hidden;
+position: absolute;
+left: 0px;
+top: 0px;
+width:100%;
+height:100%;
+text-align:center;
+z-index: 100002;
+}
+#overlaybgr {
+visibility: hidden;
+background-color: #000000;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.6;
+filter: alpha(opacity=60);
+z-index: 100001;
+}
+#overlaySelectorCnt > div {
+width:900px;
+margin: 100px auto;
+background-color: #fff;
+border:1px solid #000;
+text-align:center;
+}
+#compSelector ul li {
+width:299px;
+background-color: #FFFFFF;
+border-bottom: 1px solid #DCDCDC;
+border-right: 1px solid #DCDCDC;
+overflow: hidden;
+float:left;
+display: block;
+height:62px;
+}
+#compSelector .compSelectorItem
+{
+position:relative;
+top:-62px;
+}
+#compSelector .compSelectorItem ch-thumb
+{
+float:left;
+margin:10px;
+}
+#compSelector .compSelectorItem ch-text
+{
+padding: 25px 30px 25px 0;
+position:relative;
+}
+#compSelector .selectorHeader h2
+{
+float:left;
+}
+#compSelector .selectorHeader #filterClose
+{
+float:right;
+}
+#compSelector .selectorHeader
+{
+float:left;
+width:100%;
+background-color:#FFFFFF;
+border-bottom: 1px solid #DCDCDC;
+}
+#compSelector li .ch-text
+{
+margin:0;
+padding:15px 25px 10px 15px;
+}
+#compSelector .compItemOverlay
+{
+height: 62px;
+margin: 0;
+padding: 0;
+top:0;
+left:0;
+position: relative;
+width: 300px;
+visibility: hidden;
+background-color: #000000;
+opacity: 0.3;
+filter: alpha(opacity=30);
+z-index: 100003;
+}
+.year-sel {margin: 7px auto 0;text-align:center;position:absolute;left:7px;bottom:7px;padding: 0 7px;}
+.year-sel .year-selector-wrap {border: 1px 1px 0;border-color: #BDBDBD;border-style: solid;display: inline-block;}
+.year-sel .year-selector-wrap label {font:bold 12px/1 Arial;padding: 0 5px;}
+.trSelector {
+padding: 10px;
+padding-left:16px;
+margin-top:10px;
+margin-bottom:10px;
+border-left: 6px solid #264f83;
+background-color:#fff;
+}
+.trselect-from, .trselect-to, .trSelector-btn {
+display:inline;
+}
+.trSelector-intro {
+padding-bottom:5px;
+}
+.trselect-to {
+margin-left:15px;
+}
+select.trselect-from, select.trselect-to {
+margin-left:5px;
+}
+.trSelector-btn {
+margin-left: 15px;
+margin-right: 15px;
+}
+.trSelector-btn span.wmc-selector-btn-text {
+background-color:transparent;
+border: 1px #e4e4e4 solid;
+}
+.trSelector-btn span.wmc-selector-btn-text:hover {
+background-color: #264f83;
+color: #fff;
+}
+.trSelector-item-lnk {
+display:inline
+}
+.trSelector-item-lnk a{
+color: #0087e6;
+}
+.trSelector .trFootNote.m-head{
+padding: 0px 0px;
+background-color: transparent;
+margin-top: 10px;
+}
+.trSelector-intro .trFootNote.m-head{
+margin-top: 0px;
+}
+.filterStatus-desc, .competition-list {background-color:#fff;}
+.filterStatus-desc {padding:10px 10px 0 10px;}
+.competition-list {margin-bottom:20px;padding:10px;}
+.competition-list .competition-wrap {min-height:20px;}
+.competition-list input[type="checkbox"] {opacity:1;display:inline-block;height:auto;width:auto;}
+.competition-list .competition-name {padding-left:3px;}
+.m-list .m-venue {position:absolute;left:9px;bottom:1px;color:#6c6b6b;}
+.promo.fav-competitions {margin-bottom: 20px;}
+.m-h-main{border:1px solid #cfcfcf}
+.m-h-scorers{border-style:solid; border-color:#CDCDCD; border-width:0 1px 1px}
+.m-h-main .m {border:0}
+.m-h-wrap{ position:relative;}
+.m-h-scHome{float:left;width:45%;text-align:right}
+.m-h-scAway{float:right;width:45%;text-align:left}
+.m-h-top {height:30px}
+.m-h-date, .ico-weather {float:right}
+span.ico-weather{height: 24px;width: 24px;}
+span.ico-weather.wmcIcon-1{background-image: url("/imgml/icons/weather/matchHeader/weather1.png");}
+span.ico-weather.wmcIcon-2{background-image: url("/imgml/icons/weather/matchHeader/weather2.png");}
+span.ico-weather.wmcIcon-3{background-image: url("/imgml/icons/weather/matchHeader/weather3.png");}
+span.ico-weather.wmcIcon-4{background-image: url("/imgml/icons/weather/matchHeader/weather4.png");}
+span.ico-weather.wmcIcon-5{background-image: url("/imgml/icons/weather/matchHeader/weather5.png");}
+span.ico-weather.wmcIcon-6{background-image: url("/imgml/icons/weather/matchHeader/weather6.png");}
+span.ico-weather.wmcIcon-7{background-image: url("/imgml/icons/weather/matchHeader/weather7.png");}
+span.ico-weather.wmcIcon-8{background-image: url("/imgml/icons/weather/matchHeader/weather8.png");}
+span.ico-weather.wmcIcon-9{background-image: url("/imgml/icons/weather/matchHeader/weather9.png");}
+span.ico-weather.wmcIcon-10{background-image: url("/imgml/icons/weather/matchHeader/weather10.png");}
+.m-h-date {line-height:30px}
+.m-h-main .t { width:35%; margin-top:14px}
+.m-h-main .i-4{ width:70px; height:70px; margin:0 10px}
+.m-h-main .t-n {min-height: 70px; margin-top:0}
+.m-h-main .t-nText {display: table-cell;vertical-align: middle;width: 180px;height: 70px;font-size:20px}
+.m-h-main .s { width:30%;margin:0 auto 18px auto}
+.m-h-main .s-res {padding-top:33px}
+.m-h-main .s-resText {font-size:40px}
+.m-h-main .mc-match-is-fixture .s-resText{ color:#808080}
+.m-h-main .mc-match-is-result .s-stat{position: absolute;bottom: -20px; width:100%}
+.m-h-main .mc-match-is-result .s-statText {font:bold 12px/1 Arial}
+.m-h-main .mc-match-is-live .s-statText {font:bold 16px/15px Arial; padding:3px 10px}
+.m-h-main .m-venue {text-align:center;margin:3px auto;height:26px}
+.m-h-main .m-venueText {color: #808080;display: table-cell;font-size: 12px;margin: 0 auto;position: absolute;width: 652px;height: 26px;vertical-align: bottom;}
+.m-h-scorers {background-color:#eaeaea;padding:10px;border-top:0;margin-bottom:30px}
+.m-h-scorers li{ margin:2px 0;}
+.m-h-scorers a{font-size:14px}
+.lineup{margin-bottom:20px}
+.lineup .cnt-title{ margin-bottom:14px}
+.teams-m-h td {padding:0 15px;text-transform:uppercase;font-weight:bold;font-size:13px}
+.teams-m-h .l { padding-left:10px}
+.teams-m-h .r { padding-right:10px}
+.sep {background-color:#DCDCDC;text-align:center;padding:5px;height:25px}
+.sep h3 {font:bold 12px/25px Arial,Verdana,Serif;color:#3B3B3B;text-transform: capitalize}
+#sepSub h3 {text-transform: none}
+.column50 {width:50%}
+.playernum {font-weight:bold; width:36px; text-align:center;height:22px; padding-top:6px }
+.lineup td { padding:4px 0;}
+#squads td, #substitutes td {vertical-align:top}
+#squads td > span,
+#substitutes td > span { display: block;}
+#squads td.l > span,
+#substitutes td.l > span { float:left}
+#squads td.r > span,
+#substitutes td.r > span { float:right}
+.player-e {padding-top: 2px}
+.l .player-n{padding:6px 4px 0 0}
+.r .player-n{padding:6px 0 0 4px}
+.alignednames .l {padding-left:36px;width:50%}
+.alignednames .r {padding-right:36px;width:50%}
+#substitution td { padding:4px}
+#substitution td.c { width:28px}
+[class^="icon-events-"] {
+display: inline-block;
+width: 23px;
+height: 23px;
+vertical-align: middle;
+background-image: url(http://img.fifa.com/imgml/wmc/icons-events.png);
+background-position: 0 0;
+background-repeat: no-repeat;
+font:bold 11px/1 Arial;
+text-align:left;
+}
+.icon-events-goal {background-position:0 0}
+.icon-events-goalsp {background-position:0 -48px}
+.icon-events-yellow {background-position:0 -72px}
+.icon-events-red {background-position:0 -120px}
+.icon-events-yellow2red {background-position:0 -96px}
+.icon-events-in {background-position:0 -168px;
+line-height: 24px;padding-left: 20px;width: auto ;}
+.icon-events-out {background-position:0 -144px;
+line-height: 24px;padding-left: 20px;width: auto ;}
+.icon-events-penaltywon {background-position:0 -48px}
+.icon-events-penaltyloss {background-position:0 -24px}
+.icon-events-owngoal{background-position:0 -192px;}
+#substitution [class^="icon-events-"] {width:auto}
+.stb{position:relative; padding-top:4px}
+.stb .FBLikeButton,
+.stb .TwitterButton,
+.stb .GooglePlusOneButton{float: left; cursor:pointer; margin-right:10px;}
+.stb-share,
+.stb-comments,
+.stb-comments .stb-t,
+.stb-email,
+.stb-rss,
+.stb-print{background:transparent url(http://img.fifa.com/imgml/icons/icons-toolbar.gif) no-repeat 0 0px;
+cursor:pointer; float:left}
+.stb-share{min-width: 40px; height: 20px; background: none; padding: 2px 0; }
+.stb-comments{background-position: 0 -30px; min-width: 20px;
+padding: 0 3px; margin-left:15px; height: 20px; text-decoration: none !important; }
+.stb-comments .stb-t {color: #FFFFFF;font: bold 11px/16px Arial;text-align:center;
+background-position: 0 -57px; background-repeat:repeat-x; float:none; display:block; padding:0 3px}
+#sharingToolbarBottom {margin-bottom: 10px;}
+.stb-tools{ float:right; }
+.stb-email, .stb-rss, .stb-print { margin-left: 15px; width: 16px;height: 16px; }
+.stb-email{ background-position: -4px -109px}
+.stb-rss{background-position: -2px -130px; }
+.stb-print{background-position: -4px -153px;}
+.article {background-color:#fff;padding:10px 10px 0 10px!important;width:auto!important; font-family:Verdana!important
+}
+.articleBody .landscape {margin:10px -10px!important}
+.newsQuote {background-color:transparent!important}
+.articleBody p { font:12px/18px Verdana!important;}
+.imgNQL,.imgNQR{ display:none}
+.newsQuote:after,
+.newsQuote:before { position: absolute; width: 31px; height:26px; content:""; top:12px; border:0}
+.newsQuote:after{background:url("http://img.fifa.com/imgml/wmc/quote.gif") no-repeat scroll 0 0 transparent; left: 0}
+.newsQuote:before{background:url("http://img.fifa.com/imgml/wmc/quote_reverse.gif") no-repeat scroll 0 0 transparent; right:0;}
+.newsQuoteIC {margin:0!important;}
+.newsQuote{ padding:8px 40px!important; width:auto!important; }
+.newsQuoteIC .a{ width:auto!important; font-size:12px; line-height:18px; padding:0!important}
+#hysHeader{ background:none!important; margin-top:0!important}
+#hysHeader .hysText a,#hysHeader .hysTitle {padding-left: 0!important; font-weight:normal;}
+#hysHeader .hysText a{ color:#444!important}
+#hysHeader .hysText{ height:auto; padding:10px 45px; margin: -10px -10px 10px -10px;
+background:#E3EEEF url(http://img.fifa.com/imgml/wmc/icons-general.png) no-repeat -6px -522px;}
+.hysTitle h1{ font-size:30px}
+.hysText{ background-color: #e3eef0;}
+.newsCredits.subTitleCredits,
+.hysTitle .newsCredits {font-size:10px;color:#B0B0B0;margin:10px 0!important}
+.credits.nofloat {margin:-34px -10px auto!important}
+.newRelArticle li{padding:7px; font-family:Verdana}
+.relArticle ul, .relItems ul{ padding:0!important }
+.relItems.relTeams ul,.relItems.relClubs ul{ padding: 0!important}
+.relArticle li,.relItems li {
+list-style-image: none!important; margin:0!important;}
+.relArticle.relNews li:before {
+background: transparent url(http://img.fifa.com/imgml/fifacom2/newsreader/icons-nr.png) no-repeat scroll 0 -279px;
+content: ""; display: block;height: 16px; width: 16px; float:left; margin-right:5px; }
+.box.newRelArticle .subTitleNew {background-color:#EBEBEB;color:#3B3B3B;font:bold 12px Verdana;padding:5px 10px}
+.relTeam, .relClub, .relMA {border-top:solid 1px #EBEBEB;background:url("http://img.fifa.com/imgml/wmc/icons-general.png") no-repeat scroll 273px -170px transparent}
+.box.newRelArticle .team a {font-weight:bold;}
+.articlerel .i-3{ width:32px; height:32px; float:left}
+.articlerel .relTeamName{ display:table-cell; vertical-align:middle; height:32px; width:240px;padding-left: 10px;font: bold 12px/1.2 Verdana;}
+.articlerel .i-3 img{ background-color:#FFF}
+.relArticle li a{ font:normal 12px/1.2 Verdana!important}
+.newRelArticle .relPlayers li{ padding-left:12px}
+.relPlayers ul{ padding:5px 0}
+.relMAs li .t-i,
+.relTeams li .t-i{ float:left;}
+.relMAs.relItems li a,
+.relTeams.relItems li a{ font-size:12px}
+.articlerel.relMAs .relTeamName,
+.articlerel.relTeams .relTeamName{ min-height:30px}
+.relTeams li .t-i img{ top:6px}
+.relLinks li {padding: 7px 7px 7px 12px!important;}
+.relDocs li {padding: 7px!important;}
+.relDocs li:before {
+background: transparent url(http://img.fifa.com/imgml/icons/icons16.png) no-repeat scroll -2px -43px;
+content: ""; display: block;height: 16px; width: 16px; float:left; margin-right:5px; }
+.sliderNav {text-align:center;width:95%;padding:6px 0;margin:0 auto}
+.phGalSlideInArticle .sliderNav li {float:none;margin:3px}
+.phGalSlide {float:left;width:auto;height:190px}
+.phGalSlideItem img {padding:3px;border:1px solid #DDDDDD;background:none repeat scroll 0 0 #FFFFFF;}
+#slideContent {position:relative;overflow:hidden;height:216px;}
+#slideContent>div {position:absolute;left:0;top:0;}
+.phGalSlideInArticle {text-align:center;margin:0 auto;overflow:auto;}
+.phGalSlideInArticle .pics {margin:0 14px;overflow:hidden;position:relative;}
+.phGalSlideInArticle .boxShadowFrameUp {margin-top:13px;}
+.phGalSlideInArticle .boxShadowFrameBottom {margin-top:8px;margin-bottom:13px;}
+.phGalSlideInArticle ul.phGalSlide li a {float:left;width:82px;height:82px;}
+.phGalSlideInArticle ul.command {text-align:center;margin:0 auto;height:20px;width:100px}
+.phGalSlideInArticle ul.command li {cursor:pointer;}
+.phGalSlideInArticle li {display:inline;margin:5px 6px;float:left;}
+.relArticleVideoBox.bC {padding:15px 5px 0}
+.iFrameInArticle{max-width:100%}
+#smartAppBanner {overflow: hidden;left: 0;top: 0;right: 0;z-index: 999999;}
+#smartAppBanner .container {margin: 0 auto;}
+#smartAppBanner .close {display:block;left:5px;position:absolute;top: 5px;}
+#smartAppBanner .close:before, #smartAppBanner .close:after {display:none}
+#smartAppBanner .icon {background: url("http://img.fifa.com/imgml/mobile/fifa-icon.png?v1") no-repeat;border-radius: 10px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);display: block;height: 57px;left: 30px;position: absolute;top: 10px;width: 57px;}
+#smartAppBanner.no-icon .icon {display: none;}
+#smartAppBanner .info {font-size: 10px;font-weight: bold;left: 98px;line-height: 14px;position: absolute;top: 18px;}
+#smartAppBanner.no-icon .info {left: 34px;}
+#smartAppBanner .info strong {display: block;font-size: 16px;line-height: 18px;}
+#smartAppBanner .info > span {display: block;font-size: 14px}
+#smartAppBanner .info em {font-style: normal;text-transform: uppercase;}
+#smartAppBanner .button {font-size: 14px;font-weight: bold;height: 24px;line-height: 24px;position: absolute;right: 20px;text-align: center;text-decoration: none;text-transform: uppercase;top: 24px;}
+#smartAppBanner.ios {position: absolute;background-color:#dcdcdc;background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#cccccc));background-image:-webkit-linear-gradient(to bottom, #efefef, #cccccc);background-image:-o-linear-gradient(to bottom, #efefef, #cccccc);background-image:linear-gradient(to bottom, #efefef, #cccccc);font-family: 'Helvetica Neue',sans-serif;height: 80px;box-shadow: inset 0 -2px 2px -2px rgba(0, 0, 0, 0.5);}
+#smartAppBanner.ios .close {background: none repeat scroll 0 0 #070707;border: 2px solid #FFFFFF;border-radius: 13px;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);color: #FFFFFF;font-family: 'ArialRoundedMTBold',Arial;font-size: 15px;height: 13px;line-height: 13px;text-align: center;text-decoration: none;text-shadow: none;width: 13px;}
+#smartAppBanner.ios .close:active {color: #AAAAAA;font-size: 13px;}
+#smartAppBanner.ios .info {color: #6A6A6A;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);}
+#smartAppBanner.ios .info strong {color: #4D4D4D;}
+#smartAppBanner.ios .button {border: 1px solid #BFBFBF;right:45px;border-radius: 3px;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), 0 1px 0 rgba(255, 255, 255, 0.7) inset;color: #6A6A6A;padding: 0 10px;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);min-width:3%;}
+#smartAppBanner.ios .icon.gloss:after {border-radius: 10px 10px 12px 12px;border-top: 1px solid rgba(255, 255, 255, 0.8);content: "";height: 50%;left: 0;position: absolute;top: -1px;width: 100%;}
+#smartAppBanner.android {position: absolute;font-family: Arial;height: 74px;background-color: #E5E5E5;border-color: #B3C833 #212228 #212228;border-top: 5px solid #B3C833;border-bottom: 1px solid;}
+#smartAppBanner.android .close {background: url("http://img.fifa.com/imgml/mobile/close-x.png");border: 0 none;height: 8pt;line-height: 8px;width: 8pt;color:transparent}
+#smartAppBanner.android .info {font-family: Arial;color: #8D8D8D;}
+#smartAppBanner.android .info strong {font-weight:normal;color:#333333;}
+#smartAppBanner.android .button {color: #FFFFFF;padding: 1px;height:36px;line-height:36px;top:18px;right:30px;}
+#smartAppBanner.android .button span {background-color: #B3C833;border-radius:2px;box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);display: block;padding: 0 20px;text-shadow: none;text-transform: none;}
+#smartAppBanner.android .button:active, #smartbanner.android .button:hover {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);}
+@media (min-width:768px) and (max-width:1024px) {#smartAppBanner {width: 1024px; }}
